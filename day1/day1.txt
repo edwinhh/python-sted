@@ -1,0 +1,122 @@
+1、上课内容
+	20周
+	1、接口测试
+	2、python语言
+	3、接口自动化
+	4、前端、html、css、js
+	5、ui自动化(web、app（Android、ios）)
+	6、服务端开发，测试工具开发
+2、上课的时间
+	每周六 9：30 - 12：00 
+		  13：30 -17：30
+	下周周日上一天课
+3、视频
+	播放器
+		http://www.360dhf.cn/dhfplayer.html
+	需要账号和密码
+		姓名：沈显禄
+		设备：ios、Android、mac、Windows
+4、每周的作业
+	1、自己去博客园申请一个博客，把每周学习的内容，至少写一篇博客，
+		http://www.nnzhp.cn/
+	2、https://gitee.com/xibohong_01/python01/tree/master/day1%E4%BD%9C%E4%B8%9A
+
+
+接口测试：
+	1、前端（客户端）  
+		Android：
+			Android
+		ios：
+			object-c、swift
+		web：
+			html、js、css
+
+	2、后端（服务端）
+		java、python、php、go.....
+	接口测试就是功能测试。
+	接口就是用来连接客户端和服务端，一般接口返回的数据都json。
+	json
+
+	接口
+		url
+		请求参数
+		请求方式
+	http://api.nnzhp.cn/api/user/stu_info?stu_name=小黑&sex=男&age=18
+
+
+	create_order
+
+	cookie
+		存在你本地的一个键值对
+		niuhanyang 1
+
+	session	
+		存放在服务端的一个键值对
+
+	get、post的区别
+		1、get请求比post请求安全
+		2、get请求参数有长度限制，post请求没有
+
+		3、get请求没有body，参数都是放在url里面的，而post请求参数是放在body里面的。
+
+		http请求
+			url?age=18
+			请求头  header，一般请求头里面放一些额外的信息，比如说cookie、用的是什么浏览器
+			请求体  body
+		http请求的状态码：
+			200 #2 请求成功 
+			404 #4 代表客户端发出去的请求有问题
+			300 #3 代表重定向，
+			500、502 #服务端有问题
+
+
+
+总结：
+	接口测试
+		接口文档
+			url
+			请求方式
+			请求参数
+			返回参数说明
+
+		postman
+		怎么用postman做自动化测试
+
+自动化测试
+	写代码帮你测试。
+
+python
+	python2
+	python3.x
+
+安装python一定要加两个目录到环境变量里面
+	1、python的安装目录
+	2、python安装目录下面的scripts目录
+
+
+
+作业：
+    1、写一个登录的程序，
+        1、最多登陆失败3次
+        2、登录成功，提示欢迎xx登录，今天的日期是xxx，程序结束
+        3、要检验输入是否为空,账号和密码不能为空
+        4、账号不区分大小写
+    2、写一个随机产生138开头手机号的程序
+        1、输入一个数量，产生xx条手机号
+            prefix = '138'
+        2、产生的这些手机号不能重复
+
+1、博客地址
+2、
+
+
+
+
+
+
+
+
+
+
+
+
