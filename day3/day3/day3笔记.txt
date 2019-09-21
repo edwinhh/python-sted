@@ -1,0 +1,105 @@
+上周回顾：
+    1、list  dict tuple set 字符串常用的方法 简单的文件操作
+        l = [1,2,3,4,'abc']
+        l.append()
+        l.insert(0,a)
+        l[0] = 5
+
+        l.pop(0)
+        l.remove('abc')
+        del l[0]
+
+        l[0]
+
+        l[:3]
+
+        l.index('acv')
+        l.count()
+
+        t = (1,2,3)
+        t[0]
+        t.count()
+        t.index()
+
+        dict
+        d = {"key":"value"}
+        d["name"] = "小黑"
+        d.setdefault("phone",110)
+
+        d["phone"] = 120
+
+        d.pop('phone')
+        del d['phone']
+
+        d['phone']
+        d.get('phone',110)
+
+        d.keys()
+        d.values()
+
+        for k in d:
+            print(k,d.get(k))
+
+        for key,value in d.items():
+            print(key,value)
+
+
+    l = [1,1,2,23,4]
+    s = set()
+    s2 = {1,2,3,4}
+    s3 = {2,3,4,5}
+    s3.add(1)
+    s3.remove(1)
+
+
+    f = open("a.txt")
+    f.read()
+
+    f = open("a.txt","w")
+    f.write("aaa")
+
+    c.close()
+
+
+
+
+
+本周内容：
+    1、文件读写
+    2、函数
+        函数的参数
+
+        函数的返回值
+    作业：
+        1、
+            字典操作+文件操作+函数
+         1、写一个商品管理的小程序
+         2、商品存在文件里面
+            1、添加商品
+                输入产品名称、颜色、价格
+                要校验商品是否存在，价格是否合法
+                输入是否为空
+            2、修改商品信息
+                输入产品名称、颜色、价格
+                要校验商品是否存在，价格是否合法
+                输入是否为空
+            3、查看商品信息
+                输入商品名称
+                 输入all就展示全部商品
+                 输入的是其他的商品名称，
+            4、删除商品
+                输入商品名称
+
+
+
+
+
+
+
+
+
+
+
+
+
+
