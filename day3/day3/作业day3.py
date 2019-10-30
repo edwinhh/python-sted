@@ -2,6 +2,7 @@ import datetime,json
 
 file="products.json"
 
+#验证价格
 def check_price(price):
     price=str(price)
     if price.isdigit() and int(price) > 0:
@@ -12,6 +13,7 @@ def check_price(price):
             return True
     return False
 
+#从文件读取，然后判断id是否存在
 def check_id_io(id):
     products=read(file)
     if id in products:
@@ -19,19 +21,21 @@ def check_id_io(id):
     else:
         return 1
 
+#判断id是否存在在字典products
 def check_id(id,products):
     if id in products:
         return 0
     else:
         return 1
 
+#从文件读取json，转成dict返回
 def read(file):
     products={}
     with open(file,'r',encoding='utf-8') as f:
         products=json.load(f)
     return products
 
-
+#将dict 写入文件
 def write(file,dict):
     try:
         with open(file, 'w', encoding='utf-8') as f:
@@ -40,7 +44,7 @@ def write(file,dict):
     except Exception as e:
         print(e)
 
-
+#输入name，color，price，然后判断price，name，color，如果符合要求，返回字典，否则为空
 def input_info():
     name=input('name:')
     color=input('color:')
@@ -79,7 +83,6 @@ def show_product():
     products = read(file)
     print(products)
 
-    pass
 def del_product():
     product=input_info()
     products=read(file)

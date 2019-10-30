@@ -1,0 +1,105 @@
+上周回顾：
+    1、函数补充完整
+        lambada
+        def func(name,sex=1,*args,**kwargs):  hh=11
+                pass
+
+
+    2、内置函数
+        sorted()#排序
+        reversed() #反转
+        exec() #
+        eval()
+        all([ ])
+        any([ ])
+        dir()
+        zip()
+        a = [1,2,3]
+        b = [4,5,6]
+        for l1,l2 in zip(a,b):
+            pass
+
+        def func(name):
+            return name
+        map(func,[1,2,3,4,5])
+
+        def func2(num):
+            if num>5:
+                return True
+        filter(func2,[1,2,3,4,5,6,7,8])
+
+
+        round(3.11111,2)
+        max()
+        min()
+    3、模块
+        1、python文件就是模块
+        2、标准模块 python自带
+        3、第三方模块
+            pip install pymysql
+
+        导入模块的实质
+
+        导入模块的顺序
+        当前目录下，
+        sys.path
+
+
+    4、os、time
+        os.getcwd()
+        os.chdir()
+        os.remove()
+        os.makedirs()
+        os.mkdik()
+        os.rmdir()
+        os.removedirs()
+        os.listdir()
+        os.walk()
+        os.system()
+        os.popen().read()
+         'movies' +'/' + 'aa.mp3'
+        os.path.join('movies','a.mp3')
+        os.path.split('/x/x/x/a.mp3')
+        os.path.abspath('apache_2019-10-17.log')
+        #是根据相对路径获取绝对路径的，是以当前目录为标准的
+        os.path.abspath(__file__)
+        os.path.dirname()
+        os.path.getsize()
+        os.isfile()
+        os.isdir()
+        os.path.exists()
+        os.path.getctime()
+        os.path.getmtime()
+        os.path.getatime()
+
+        time,datetime
+        time.time()
+        time.strftime('%Y-%m-%d')
+
+
+
+    lambda 匿名函数
+    函数递归
+        #递归，就是函数自己调用自己
+    操作数据库、redis、excel
+
+    作业1：
+        1、写一个函数，传入一个表名，然后把这个表里面所有的数据，导出
+        到excel里面
+        def export_excel('app_myuser'):
+            pass
+            app_myuser.xls
+    作业2：
+        user
+            id username password error_count
+        注册的程序，账号密码存在数据库里面,密码要存密文的
+        username:
+        password:
+        cpwd:
+    作业3：
+        登录，
+            username
+            password
+        每登录失败一次，错误次数+1，错误次数大于等于5，提示用户被冻结
+
+

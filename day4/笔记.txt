@@ -1,0 +1,104 @@
+上周回顾：
+    1、文件读写
+        f= open(file,'r',encoding='utf-8')
+        #f.write('aa')
+        #f.writelines(['123','1233'])
+
+        #f.read()
+        #f.readlines()
+        #f.readline()
+        f.seek(0)
+        f.tell()#获取当前指针的位置
+
+        for line in f:
+            pass
+
+
+        修改文件
+            1、简单直接的方法
+                f = open(file)
+                result = f.read()
+                new_result= result.replace(old,new)
+                f.seek(0)
+                f.truncate()
+                f.write(new_result)
+            2、逐行修改
+                f1 = open(file)
+                f2 = open(fiel2)
+                for line in f1:
+                    new_line = line.upper()
+                    f2.write(new_line)
+                os.remove(file)
+                os.rename(file2,file)
+        r  w  a
+        r+ w+ a+
+    2、函数
+        file_name = 'hahah'
+        def write_log(log_file,content,level='debug'):
+            print("已写入日志")
+            for i in range(100):
+                print(i)
+            global file_name
+            file_name = 'aaaa'
+            print(file_name)
+            name = 'xiaohei'
+            line_num = 5
+            return line_num,name
+
+
+        line_num = write_log('a.log','sdfsdfsdf')
+     3、json
+        json就是字符串，所有语言都可以识别
+        import json
+        d = {}
+        json.dumps(d,en)
+
+今天的内容：
+    1、函数补充完成
+    2、内置函数
+    3、常用的模块
+
+      字符集编码
+      二进制 0 1
+      10
+    4、模块
+        1、一个模块就是一个python文件
+            1、自己写的python文件
+            2、标准模块，python自带的
+            3、第三方模块
+                安装：
+                    pip install xxx #安装
+                    pip uninstall xx #卸载
+                    pip install xx -U #更新
+                    pip freeze > 第三方模块.txt #导出已经安装的第三放模块
+                    pip install -r 第三方模块.txt #从文件里面读模块，批量安装
+                pip问题：
+                    1、pip命令不存在，把python安装目录下的Scripts加入环境变量
+                    2、pip 的时候没用python目录下的pip，使用where命令知道其他的pip，改为其他名字
+                手动安装：
+                    1、whl结尾的
+                        pip install /Users/PyMySQL-0.9.3-py2.py3-none-any.whl #后面whl文件的绝对路径
+                    2、tar.gz结尾的
+                        1、解压
+                        2、在命令行里面进入到解压的目录下
+                        3、执行python setup.py install
+
+                如果电脑上有多个版本的python
+                1、python3 -m pip install xpinyin
+                   python2 -m pip install xpinyin
+                2、找到各个版本的下面的scripts目录，pip各自修改为 pip2 /pip3
+            导入模块的顺序
+                1、当前目录下找
+                2、sys.path
+
+            导入模块的实质是
+                import模块的实质就是把该模块从上到下执行一遍
+
+    作业1：
+        1、写一个清理日志的程序，把三天前的日志和为空的日志都删掉
+        2、写一个生成大乐透号码的程序
+            生成随机号码：大乐透分前区号码和后区号码，
+            前区号码是从01-35中无重复地取5个号码，
+            后区号码是从01-12中无重复地取2个号码，组成一组7位的号码。
+
+            输入几，就产生几注，产生的这几注不能重复
