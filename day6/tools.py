@@ -30,7 +30,7 @@ def md5(s,salt=''):
     new_s = str(s) + salt
     m = hashlib.md5(new_s.encode())
     return m.hexdigest()
-s="3"
+
 
 def isdigit(s):
     try:
@@ -73,6 +73,8 @@ def get_all(key, block=True, timeout=None):
                 print(type, i)
 
     return list(vals[0])
+
+
 
 
 def keys():
