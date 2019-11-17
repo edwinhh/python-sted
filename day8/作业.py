@@ -94,5 +94,3 @@ cl.run()
 # cl.update_excl(b)
 # #print(cl.res)
 
-cl.sava_excl()
-
