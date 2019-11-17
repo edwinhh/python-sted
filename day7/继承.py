@@ -22,7 +22,7 @@ class Xw(Lw,Ll):
 
 
 # xw = Xw()
-# # print(Xw.mro())
+print(Xw.mro())
 # print(xw.money)
 # xw.make_money()
 # xw.cook()

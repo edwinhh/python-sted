@@ -52,7 +52,7 @@ def login():
     sessionid=tools.md5(t)
     #tools.rc.hset("user_seesions",sessionid,{"username":username,"userid":1})
     tools.rc.set(sessionid,username)
-    tools.rc.expire(sessionid,60*30)
+    tools.rc.expire(sessionid,60*60)
 
     # flask.request.is_json#是否请求为json
     # flask.request.json.get('')#入参是json的话，用这个
@@ -87,4 +87,4 @@ def pay():
 
         return json.dumps({'error_code': 1, 'msg': '非用户登录，登录不成功！'}, ensure_ascii=False)
 
-#server.run(host='0.0.0.0',port=8000,debug=True)
+server.run(host='0.0.0.0',port=8000,debug=True)

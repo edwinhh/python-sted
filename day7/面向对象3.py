@@ -51,8 +51,8 @@ class Person: #经典类
 xh = Person(1,'小黑')  #__init__(xh,1,'小黑')
 # xh.housework() #housework(xh)
 # xh.housework()
-# xh.sayCountry()
-# xh.help()
+xh.sayCountry()
+xh.help()
 # print(xh.country)
 #
 # xb = Person(2,'小白')

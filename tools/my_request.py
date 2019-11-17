@@ -32,17 +32,17 @@ class MyRequest:
             self.response = req
 
 
-if __name__ == '__main__':
-    import jsonpath
-    login = MyRequest('http://127.0.0.1:5000/login1',data={'username':'chenjie','password':'123456'})
-    # sessionid = login.response.get('session_id')
-    result = jsonpath.jsonpath(login.response,'$..session_id')
-    if result:
-        print('登录成功')
-    else:
-        print('登录失败')
-    print(login.response)
-
+# if __name__ == '__main__':
+#     import jsonpath
+#     login = MyRequest('http://127.0.0.1:5000/login1',data={'username':'chenjie','password':'123456'})
+#     # sessionid = login.response.get('session_id')
+#     result = jsonpath.jsonpath(login.response,'$..session_id')
+#     if result:
+#         print('登录成功')
+#     else:
+#         print('登录失败')
+#     print(login.response)
+#
 
 
     # data = {'sessionid':sessionid,'money':10000}

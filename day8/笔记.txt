@@ -1,0 +1,95 @@
+上周回顾：
+    1、面向对象
+        类
+            class Person:
+                country = 'China'
+                @classmethod
+                def help(cls):
+                    print(cls.country)
+                def say(self):
+                    print('say')
+            class Monkey:
+                discount = 0.1
+                def __init__(self,name):
+                    self.__name = name
+                    self.cur_price = 500
+
+                def __jump(self):
+                    print(self.__name)
+
+                 @propert
+                 def price(self):
+                    return self.cur_price * self.discount
+
+
+            jg = Monkey()
+            jp.__jump()
+            jg.price
+
+
+
+            class Student(Person,Monkey):
+                @staticmethod
+                def help():
+                    print('help')
+
+
+        实例、对象
+        xm = Person() #实例化
+        xm.say()
+        xm.country
+
+        实例化
+        继承
+        封装
+
+        私有
+
+        实例方法
+        实例变量
+        类方法
+        类变量
+        属性方法
+        静态方法
+1、多线程、多进程
+        input/output
+         网络io
+         磁盘io
+    多线程：
+        适用于IO密集型任务
+    多进程：
+        适用于CPU密集型任务
+
+虚拟环境：
+    pip install virtualenv
+
+    e://virtual_envs #建个文件夹专门放虚拟环境的
+    cd e://virtual_envs
+    virtualenv py3 #干净的环境，没有第三方模块，只有pip
+
+    cd /User/virtual_envs/py3/bin  #进入虚拟环境目录，linux/mac
+    cd e://virtual_envs//py3/Scripts  #进入虚拟环境目录，windows
+
+    activate #Windows
+    source ./activate   #linux/mac
+
+    deactivate 退出虚拟环境
+
+
+1、搭建测试环境
+    1、申请服务器
+    2、安装依赖的软件 jdk1.8、mysql、redis、tomcat等等
+    3、获取代码，修改配置文件，（编译、打包）
+    4、导入基础数据（建表、导入数据）
+    5、代码放到服务器上，启动
+
+2、日常部署
+    1、拉取最新代码，修改配置文件，（编译、打包）
+    2、如果有变动的sql，执行
+    3、服务器上代码替换成最新的，重启
+
+
+
+
+2、单元测试
+3、写接口自动化测试框架

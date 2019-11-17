@@ -1,6 +1,7 @@
 import requests
 import tools
 
+
 # r = requests.get('url',params={'key':'value'})
 #r.json()
 # r.content
@@ -18,10 +19,10 @@ url='https://qun.qq.com/cgi-bin/qun_mgr/search_group_members'
 # r = requests.post(url,data=data,verify=False,headers=headers )
 # print(r.json())
 
-# url1="http://127.0.0.1:8000/api/pay"
-# data={"sessionId":"250191fabd5c589820b75a791db83bc8","money":0.5}
-# #requests.post('url',files = {'file':open('a.py','rb')})
-# a=requests.post(url1,data=data)
-# print(a.text)
+url1="http://127.0.0.1:8000/api/pay"
+data={"sessionId":"2d2f69334817e10defab73fbd9161f7b","money":0.5}
+#requests.post('url',files = {'file':open('a.py','rb')})
+a=MyRequest(url1,method="post",data=data)
+print(a.text)
 # tools.put("abc","1")
 # tools.rc.expire("abc",5)
