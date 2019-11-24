@@ -1,0 +1,25 @@
+上周回顾：
+    多线程
+        def func(name):
+            pass
+        import threading
+
+        for in range(10):
+            t = threading.Thread(target=func,args=('abc',))
+            t.start()
+        while threading.active_count()!=1:
+            pass
+
+        import mutilprocess
+         p = mutilprocess.Process(target=func,args=('abc',))
+         p.start()
+        threadpool
+
+            pool = threadpool.ThreadPool(20)#实例化一个线程池
+            reqs = threadpool.makeRequests(func,url_list)#分配数据
+            [pool.putRequest(req) for req in reqs]
+            pool.wait() #等待
+
+
+    多进程
+    unittest

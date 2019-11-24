@@ -1,0 +1,7 @@
+pymysql
+yagmail
+requests
+jsonpath
+nnlog
+xlrd
+parameterized

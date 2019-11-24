@@ -10,27 +10,20 @@ db = 'jxz'
 port = 3306#默认端口号，可以不指定，需要改的话要传
 charset = 'uft8'
 
-def op_mysql(sql,many=True):
+def op_mysql(sql):
     db_info = {'user': 'jxz', 'password': '123456',
             'host': '118.24.3.40', 'db': 'jxz', 'port': 3306, 'charset': 'utf8',
             'autocommit': True}
     conn = pymysql.connect(**db_info)  # 建立连接
     cur = conn.cursor(pymysql.cursors.DictCursor)  # 游标
     cur.execute(sql)  # 执行sql语句，insert 、update 、delete
-    if many:
-        result = cur.fetchall()
-    else:
-        result=cur.fetchone()
+    result = cur.fetchall()
     cur.close()
     conn.close()
     return result
-
 sql="select * from app_myuser"
 
-sql11="SELECT * FROM user WHERE username='hh'"
 
-a=op_mysql(sql11,many=0)
-print(a)
 
 def mysqltoexcl(stus,sheetname,savefile):
     tmp={}

@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb2eb7d7-482d-4319-b211-94d584408b73" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/day8/作业.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/my_request.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/wexcel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/python sted.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python sted.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day6/day6作业.py" beforeDir="false" afterPath="$PROJECT_DIR$/day6/day6作业.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day6/网络请求.py" beforeDir="false" afterPath="$PROJECT_DIR$/day6/网络请求.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day7/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/day7/1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day7/my_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/day7/my_request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day7/继承.py" beforeDir="false" afterPath="$PROJECT_DIR$/day7/继承.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day7/面向对象3.py" beforeDir="false" afterPath="$PROJECT_DIR$/day7/面向对象3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day8/作业.py" beforeDir="false" afterPath="$PROJECT_DIR$/day8/作业.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,8 +58,8 @@
       <file leaf-file-name="作业.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/day8/作业.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+            <state relative-caret-position="-780">
+              <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -167,7 +156,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="476" />
     <option name="y" value="92" />
     <option name="width" value="1183" />
@@ -459,7 +448,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3066089" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3066089" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17377399" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -840,8 +829,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/day8/作业.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+        <state relative-caret-position="-780">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>

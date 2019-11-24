@@ -25,7 +25,6 @@ class InterfaceTest():
         #     if k in res.keys():
         #         if v==res[k]
         for i in ck.keys():
-
             if i in res.keys():
                 if ck[i]!= str(res[i]):
                     fag=0
