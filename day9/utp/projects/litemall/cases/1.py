@@ -7,6 +7,7 @@ from utils.mysql_util import mysql
 from utils.utils import GetTestData
 from concurrent import futures
 from concurrent.futures import ThreadPoolExecutor,wait,as_completed
+import time
 
 class geo():
 	def __init__(self,file):
@@ -22,13 +23,24 @@ class geo():
 				'city': city, \
 				'ak' :"70231a4fa9c047d381cc55c8ff75e0bf"}
 		res= MyRequest(self.url_geo, data)
+		return {"address":address,"res":res}
 		
 	
 geo=geo("geo.txt")
 #geo.test_geo()
+
+def parse_page(res):
+    res = res.result()
+    print('<%s> is running [%s]'%(os.getpid(),res['address']))
+
+		
 def mp(fun,datas,num=os.cpu_count()):
+	t1=time.time()
 	with ThreadPoolExecutor(num) as ex:
 		f_list=[ex.submit(fun,data) for data in datas]
+		#f_list = [ex.submit(fun, data).add_done_callback(parse_page) for data in datas]
+	t2 = time.time()
+	wait(f_list)
 	for f in f_list:
 		if f.running():
 			print('%s is running' % str(f))
@@ -36,17 +48,23 @@ def mp(fun,datas,num=os.cpu_count()):
 		try:
 			ret = f.done()
 			if ret:
-				print('%s is finished'%str(f))
+				print('%s is finished'%f.result()['address'])
 		except Exception as e:
 			f.cancel()
 			print(str(e))
 	print("主线程结束")
+	print("耗时：%s" % (t2 - t1))
 
 def mp1(fun,datas,num=os.cpu_count()):
+	t1=time.time()
 	with ThreadPoolExecutor(max_workers=num) as executor:
 		future=list(executor.map(fun,datas))
-		print(future)
+	t2 = time.time()
+	for f in future:
+		print('%s is finished'%f.get('address'))
+  
 	print("主线程结束")
+	print("耗时：%s"%(t2-t1))
 
 # from concurrent.futures import ProcessPoolExecutor
 # def pool_factorizer_go(nums, nprocs):
@@ -58,4 +76,4 @@ def mp1(fun,datas,num=os.cpu_count()):
 
 
 
-mp(geo.test_geo,geo.par)
+mp1(geo.test_geo,geo.par)

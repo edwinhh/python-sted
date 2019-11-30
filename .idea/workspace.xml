@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb2eb7d7-482d-4319-b211-94d584408b73" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day9/1.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day9/utp/projects/litemall/cases/1.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/day9/utp/projects/litemall/report/litemall_测试报告_20191124164539.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/day9/utp/projects/litemall/report/litemall_测试报告_20191124164640.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/day9/utp/projects/litemall/report/litemall_测试报告_20191124164750.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/day9/utp/projects/litemall/report/litemall_测试报告_20191124165002.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/day9/utp/projects/litemall/report/litemall_测试报告_20191124172017.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/python sted.iml" afterPath="$PROJECT_DIR$/.idea/python sted.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day9/utp/config/setting.py" afterPath="$PROJECT_DIR$/day9/utp/config/setting.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day9/utp/logs/utp.log" afterPath="$PROJECT_DIR$/day9/utp/logs/utp.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day9/utp/projects/litemall/cases/test_address.py" afterPath="$PROJECT_DIR$/day9/utp/projects/litemall/cases/test_address.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day9/utp/projects/litemall/const.py" afterPath="$PROJECT_DIR$/day9/utp/projects/litemall/const.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day9/utp/projects/litemall/run.py" afterPath="$PROJECT_DIR$/day9/utp/projects/litemall/run.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day9/utp/utils/request.py" afterPath="$PROJECT_DIR$/day9/utp/utils/request.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day9/utp/utils/send_message.py" afterPath="$PROJECT_DIR$/day9/utp/utils/send_message.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day9/utp/projects/litemall/cases/1.py" afterPath="$PROJECT_DIR$/day9/utp/projects/litemall/cases/1.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -96,8 +82,8 @@
       <file leaf-file-name="1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/day9/utp/projects/litemall/cases/1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="51" column="39" lean-forward="true" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
+            <state relative-caret-position="955">
+              <caret line="78" column="25" lean-forward="true" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -227,7 +213,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="476" />
     <option name="y" value="92" />
     <option name="width" value="1183" />
@@ -554,7 +540,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -971,8 +957,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/day9/utp/projects/litemall/cases/1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="51" column="39" lean-forward="true" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
+        <state relative-caret-position="955">
+          <caret line="78" column="25" lean-forward="true" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
