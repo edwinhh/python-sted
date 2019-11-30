@@ -1,0 +1,59 @@
+2019-11-24 16:06:06,863 - /Users/nhy/PycharmProjects/mjz/day9/utp/utils/utils.py[line:40] - DEBUG: 开始读取参数化文件address.xlsx
+2019-11-24 16:06:06,863 - /Users/nhy/PycharmProjects/mjz/day9/utp/utils/utils.py[line:50] - ERROR: address.xlsx参数化文件不存在
+2019-11-24 16:11:26,068 - /Users/nhy/PycharmProjects/mjz/day9/utp/utils/utils.py[line:39] - DEBUG: 开始读取参数化文件/Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/data/address.xlsx
+2019-11-24 16:13:20,044 - /Users/nhy/PycharmProjects/mjz/day9/utp/utils/utils.py[line:39] - DEBUG: 开始读取参数化文件/Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/data/address.xlsx
+2019-11-24 16:14:54,592 - /Users/nhy/PycharmProjects/mjz/day9/utp/utils/utils.py[line:39] - DEBUG: 开始读取参数化文件/Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/data/address.xlsx
+2019-11-24 16:14:55,007 - /Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/utils.py[line:19] - DEBUG: 登录的返回结果，{'errno': 0, 'data': {'userInfo': {'nickName': 'user123', 'avatarUrl': ''}, 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0aGlzIGlzIGxpdGVtYWxsIHRva2VuIiwiYXVkIjoiTUlOSUFQUCIsImlzcyI6IkxJVEVNQUxMIiwiZXhwIjoxNTc0NTkwNDk0LCJ1c2VySWQiOjEsImlhdCI6MTU3NDU4MzI5NH0.Su2j-qye7z6JqX0jJwxRBCUUp7Hp2tHQnzadzS6QC34'}, 'errmsg': '成功'}
+2019-11-24 16:16:06,377 - /Users/nhy/PycharmProjects/mjz/day9/utp/utils/utils.py[line:39] - DEBUG: 开始读取参数化文件/Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/data/address.xlsx
+2019-11-24 16:16:06,947 - /Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/utils.py[line:19] - DEBUG: 登录的返回结果，{'errno': 0, 'data': {'userInfo': {'nickName': 'user123', 'avatarUrl': ''}, 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0aGlzIGlzIGxpdGVtYWxsIHRva2VuIiwiYXVkIjoiTUlOSUFQUCIsImlzcyI6IkxJVEVNQUxMIiwiZXhwIjoxNTc0NTkwNTY2LCJ1c2VySWQiOjEsImlhdCI6MTU3NDU4MzM2Nn0.Dj8bH44_Ora-KX1EhW5JorHAgJ2So_66WWlSsVDO28I'}, 'errmsg': '成功'}
+2019-11-24 16:17:18,105 - /Users/nhy/PycharmProjects/mjz/day9/utp/utils/utils.py[line:39] - DEBUG: 开始读取参数化文件/Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/data/address.xlsx
+2019-11-24 16:17:18,640 - /Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/utils.py[line:19] - DEBUG: 登录的返回结果，{'errno': 0, 'data': {'userInfo': {'nickName': 'user123', 'avatarUrl': ''}, 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0aGlzIGlzIGxpdGVtYWxsIHRva2VuIiwiYXVkIjoiTUlOSUFQUCIsImlzcyI6IkxJVEVNQUxMIiwiZXhwIjoxNTc0NTkwNjM4LCJ1c2VySWQiOjEsImlhdCI6MTU3NDU4MzQzOH0.hdpU0hnj0cssT_aUC5ZtF-O3y-sXv1tscF6M1B4XA8s'}, 'errmsg': '成功'}
+2019-11-24 16:20:10,460 - /Users/nhy/PycharmProjects/mjz/day9/utp/utils/utils.py[line:39] - DEBUG: 开始读取参数化文件/Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/data/address.xlsx
+2019-11-24 16:20:10,968 - /Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/utils.py[line:19] - DEBUG: 登录的返回结果，{'errno': 0, 'data': {'userInfo': {'nickName': 'user123', 'avatarUrl': ''}, 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0aGlzIGlzIGxpdGVtYWxsIHRva2VuIiwiYXVkIjoiTUlOSUFQUCIsImlzcyI6IkxJVEVNQUxMIiwiZXhwIjoxNTc0NTkwODEwLCJ1c2VySWQiOjEsImlhdCI6MTU3NDU4MzYxMH0.oNBvjLPsmpoRigj4ikz7RYfYPHSyO4EbXdXqxrelTB0'}, 'errmsg': '成功'}
+2019-11-24 16:45:38,978 - /Users/nhy/PycharmProjects/mjz/day9/utp/utils/utils.py[line:39] - DEBUG: 开始读取参数化文件/Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/data/address.xlsx
+2019-11-24 16:45:39,354 - /Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/tools.py[line:19] - DEBUG: 登录的返回结果，{'errno': 0, 'data': {'userInfo': {'nickName': 'user123', 'avatarUrl': ''}, 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0aGlzIGlzIGxpdGVtYWxsIHRva2VuIiwiYXVkIjoiTUlOSUFQUCIsImlzcyI6IkxJVEVNQUxMIiwiZXhwIjoxNTc0NTkyMzM5LCJ1c2VySWQiOjEsImlhdCI6MTU3NDU4NTEzOX0.9mEaRHjIJe01z2qU3PkUPqE2UpG4peAgdlS3Qe3haj8'}, 'errmsg': '成功'}
+2019-11-24 16:45:40,397 - /Users/nhy/PycharmProjects/mjz/day9/utp/utils/send_message.py[line:12] - ERROR: 发送邮件失败+Traceback (most recent call last):
+  File "/Users/nhy/PycharmProjects/mjz/day9/utp/utils/send_message.py", line 10, in send_mail
+    to=email_to, cc=email_cc, attachments=files)
+  File "/anaconda3/lib/python3.6/site-packages/yagmail/sender.py", line 125, in send
+    msg = self._prepare_message(addresses, subject, contents, attachments, headers)
+  File "/anaconda3/lib/python3.6/site-packages/yagmail/sender.py", line 248, in _prepare_message
+    raise TypeError("'{0}' is not a valid filepath".format(a))
+TypeError: '/Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/report/litemall_测试报告_20191124164539' is not a valid filepath
+
+2019-11-24 16:46:40,194 - /Users/nhy/PycharmProjects/mjz/day9/utp/utils/utils.py[line:39] - DEBUG: 开始读取参数化文件/Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/data/address.xlsx
+2019-11-24 16:46:40,494 - /Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/tools.py[line:19] - DEBUG: 登录的返回结果，{'errno': 0, 'data': {'userInfo': {'nickName': 'user123', 'avatarUrl': ''}, 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0aGlzIGlzIGxpdGVtYWxsIHRva2VuIiwiYXVkIjoiTUlOSUFQUCIsImlzcyI6IkxJVEVNQUxMIiwiZXhwIjoxNTc0NTkyNDAwLCJ1c2VySWQiOjEsImlhdCI6MTU3NDU4NTIwMH0.He88gLLGUGAqYRUO-wI_pQGtxeKdgSAJeNj_t_-F5tE'}, 'errmsg': '成功'}
+2019-11-24 16:47:50,394 - /Users/nhy/PycharmProjects/mjz/day9/utp/utils/utils.py[line:39] - DEBUG: 开始读取参数化文件/Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/data/address.xlsx
+2019-11-24 16:47:50,823 - /Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/tools.py[line:19] - DEBUG: 登录的返回结果，{'errno': 0, 'data': {'userInfo': {'nickName': 'user123', 'avatarUrl': ''}, 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0aGlzIGlzIGxpdGVtYWxsIHRva2VuIiwiYXVkIjoiTUlOSUFQUCIsImlzcyI6IkxJVEVNQUxMIiwiZXhwIjoxNTc0NTkyNDcwLCJ1c2VySWQiOjEsImlhdCI6MTU3NDU4NTI3MH0.ksoCj6X0x0xXxq634ZI-4OW66-XNzSbSwdp12HLJciQ'}, 'errmsg': '成功'}
+2019-11-24 16:47:51,516 - /Users/nhy/PycharmProjects/mjz/day9/utp/utils/send_message.py[line:12] - ERROR: 发送邮件失败+Traceback (most recent call last):
+  File "/Users/nhy/PycharmProjects/mjz/day9/utp/utils/send_message.py", line 10, in send_mail
+    to=email_to, cc=email_cc, attachments=files)
+  File "/anaconda3/lib/python3.6/site-packages/yagmail/sender.py", line 129, in send
+    return self._attempt_send(addresses['recipients'], msg.as_string())
+  File "/anaconda3/lib/python3.6/site-packages/yagmail/sender.py", line 135, in _attempt_send
+    result = self.smtp.sendmail(self.user, recipients, msg_string)
+  File "/anaconda3/lib/python3.6/smtplib.py", line 888, in sendmail
+    raise SMTPDataError(code, resp)
+smtplib.SMTPDataError: (554, b'DT:SPM 163 smtp4,HNxpCgCHKP63Q9pdnIEtAg--.95S2 1574585271,please see http://mail.163.com/help/help_spam_16.htm?ip=111.193.219.47&hostid=smtp4&time=1574585271')
+
+2019-11-24 16:50:02,617 - /Users/nhy/PycharmProjects/mjz/day9/utp/utils/utils.py[line:39] - DEBUG: 开始读取参数化文件/Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/data/address.xlsx
+2019-11-24 16:50:02,976 - /Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/tools.py[line:19] - DEBUG: 登录的返回结果，{'errno': 0, 'data': {'userInfo': {'nickName': 'user123', 'avatarUrl': ''}, 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0aGlzIGlzIGxpdGVtYWxsIHRva2VuIiwiYXVkIjoiTUlOSUFQUCIsImlzcyI6IkxJVEVNQUxMIiwiZXhwIjoxNTc0NTkyNjAyLCJ1c2VySWQiOjEsImlhdCI6MTU3NDU4NTQwMn0.eghhqgRn0PjU4pb_2MVflH35OjHYRlEp9SXzLs_LU1w'}, 'errmsg': '成功'}
+2019-11-24 16:50:03,836 - /Users/nhy/PycharmProjects/mjz/day9/utp/utils/send_message.py[line:12] - ERROR: 发送邮件失败+Traceback (most recent call last):
+  File "/Users/nhy/PycharmProjects/mjz/day9/utp/utils/send_message.py", line 10, in send_mail
+    to=email_to, cc=email_cc, attachments=files)
+  File "/anaconda3/lib/python3.6/site-packages/yagmail/sender.py", line 129, in send
+    return self._attempt_send(addresses['recipients'], msg.as_string())
+  File "/anaconda3/lib/python3.6/site-packages/yagmail/sender.py", line 135, in _attempt_send
+    result = self.smtp.sendmail(self.user, recipients, msg_string)
+  File "/anaconda3/lib/python3.6/smtplib.py", line 888, in sendmail
+    raise SMTPDataError(code, resp)
+smtplib.SMTPDataError: (554, b'DT:SPM 163 smtp4,HNxpCgDniBA7RNpdibwtAg--.29S2 1574585403,please see http://mail.163.com/help/help_spam_16.htm?ip=111.193.219.47&hostid=smtp4&time=1574585403')
+
+2019-11-24 17:14:51,317 - /Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/tools.py[line:19] - DEBUG: 登录的返回结果，{'errno': 0, 'data': {'userInfo': {'nickName': 'user123', 'avatarUrl': ''}, 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0aGlzIGlzIGxpdGVtYWxsIHRva2VuIiwiYXVkIjoiTUlOSUFQUCIsImlzcyI6IkxJVEVNQUxMIiwiZXhwIjoxNTc0NTk0MDkxLCJ1c2VySWQiOjEsImlhdCI6MTU3NDU4Njg5MX0.UoWPJA-upDJouVW06V34FaJKIpdYIpAfrypMIghm4I4'}, 'errmsg': '成功'}
+2019-11-24 17:15:25,105 - /Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/tools.py[line:19] - DEBUG: 登录的返回结果，{'errno': 0, 'data': {'userInfo': {'nickName': 'user123', 'avatarUrl': ''}, 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0aGlzIGlzIGxpdGVtYWxsIHRva2VuIiwiYXVkIjoiTUlOSUFQUCIsImlzcyI6IkxJVEVNQUxMIiwiZXhwIjoxNTc0NTk0MTI1LCJ1c2VySWQiOjEsImlhdCI6MTU3NDU4NjkyNX0.EyrvdxXUvMNZe5RsqWQmQQP3VBkxhTmoOmlwbyqrnaA'}, 'errmsg': '成功'}
+2019-11-24 17:16:04,141 - /Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/tools.py[line:19] - DEBUG: 登录的返回结果，{'errno': 605, 'errmsg': '用户帐号或密码不正确'}
+2019-11-24 17:16:04,142 - /Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/tools.py[line:22] - ERROR: litemall：登录失败
+2019-11-24 17:16:57,949 - /Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/tools.py[line:19] - DEBUG: 登录的返回结果，{'errno': 0, 'data': {'adminInfo': {'nickName': 'admin123', 'avatar': 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif'}, 'token': 'c86b296e-ed9f-4cca-af01-1c677c6ed267'}, 'errmsg': '成功'}
+2019-11-24 17:20:17,412 - /Users/nhy/PycharmProjects/mjz/day9/utp/utils/utils.py[line:39] - DEBUG: 开始读取参数化文件/Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/data/address.xlsx
+2019-11-24 17:20:17,851 - /Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/tools.py[line:19] - DEBUG: 登录的返回结果，{'errno': 0, 'data': {'userInfo': {'nickName': 'user123', 'avatarUrl': ''}, 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0aGlzIGlzIGxpdGVtYWxsIHRva2VuIiwiYXVkIjoiTUlOSUFQUCIsImlzcyI6IkxJVEVNQUxMIiwiZXhwIjoxNTc0NTk0NDE3LCJ1c2VySWQiOjEsImlhdCI6MTU3NDU4NzIxN30.kt-e9jbgJHx_hhXbP3ZxeZj5Q-RMR1OfgjnxxMXVwuk'}, 'errmsg': '成功'}
+2019-11-24 17:20:18,548 - /Users/nhy/PycharmProjects/mjz/day9/utp/projects/litemall/tools.py[line:19] - DEBUG: 登录的返回结果，{'errno': 0, 'data': {'adminInfo': {'nickName': 'admin123', 'avatar': 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif'}, 'token': 'b726ed1e-404a-4743-bfa5-9497a78024a6'}, 'errmsg': '成功'}

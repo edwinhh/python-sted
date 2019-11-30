@@ -1,7 +1,8 @@
 import requests
+from config.setting import log
 #反射
 class MyRequest:
-    def __init__(self,url,method='get',data=None,headers=None,is_json=True):
+    def __init__(self,url,data=None,method='get',headers=None,is_json=True):
         method = method.lower()
         self.url = url
         self.data = data
@@ -17,6 +18,8 @@ class MyRequest:
             self.response = {"error":"接口请求出错%s"%e}
         else:
             self.response = req
+        #print(self.response)
+        log.info(self.response)
 
     def post(self):
         try:

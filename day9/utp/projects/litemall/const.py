@@ -14,5 +14,5 @@ test_admin_user = {
 base_path = os.path.dirname(os.path.abspath(__file__))
 
 data_path = os.path.join(base_path,'data') #存测试数据的目录
-report_path = os.path.join(base_path,'report') #存报告的目录
+report_path = os.path.join(base_path,'report') #存报告的目录` 1`
 case_path = os.path.join(base_path,'cases') #存测试用例的目录
