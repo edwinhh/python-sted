@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--    导入script的位置可以在head中，也可以在body中 放到上面由于代码从上到下执行，
+    所以会卡在js这里，影响用户体验-->
+
+
+</head>
+<body>
+<!--onclick 点击事件-->
+<input type="text" placeholder="请输入用户名" id="username">
+<input type="password" placeholder="请输入密码" id="passwd">
+<input type="button" onclick="login()" value="登录">
+<input type="button" onclick="test()" value="测试">
+<input type="button" value="匿名函数测试" id="i1">
+<input type="button" value="作用域" onclick="test_var()">
+
+
+<!--<script></script> 写js标签-->
+<!--    <script src="demo.js"></script>-->
+<script>
+    function login() {
+        var username = 'dsx';
+        var password = 123456;
+        var user = document.getElementById('username').value;
+        var passwd = document.getElementById('passwd').value;
+        console.log('passwd-->' + passwd);
+        // if a==b:
+        //     xxxx
+        //     elif
+        // 学习条件判断
+        if (username == user && password == passwd) {
+            console.log('登录成功')
+        } else if (username != user) {
+            console.log('用户名有错误！')
+        } else if (password != passwd) {
+            console.log('密码错误！')
+        } else {
+            console.log('都错了')
+        }
+
+
+        /*
+        * 1、获取用户名和密码value
+        * 2、if 进行判断
+        *
+        *
+        *
+        * */
+
+
+    }
+
+    function test() {
+        // var l = ['奔驰','宝马','奥迪','凯迪拉克']; // 声明数组
+        // var l1 = new Array(1,2,3,4); // 第二种声明方式
+        // for i in l:
+        //     print(xx)
+
+        // for (var i in l){
+        //     console.log(l[i])
+        // }
+        // // l.length == len(l)
+        // for (var i=0;i<l.length;i++){
+        //     console.log(l[i])
+        // }
+
+
+        // var m = {"name":"dsx","age":18};
+        //
+        // for (var k in m){
+        //     console.log(k);
+        //     console.log(m[k])
+        // }
+        // // 下方这种不能够循环字典
+        // for (var i=0;i<l.length;i++){
+        //     console.log(l[i])
+        // }
+
+        // var s = '测试循环字符串';
+        // // for (var i in s){
+        // //     console.log(s[i])
+        // // }
+        // for (var i=0;i<s.length;i++){
+        //     console.log(s[i])
+        // }
+        // var s = document.getElementById('username').value;
+        //
+        // switch (s) {
+        //     case 'dsx':
+        //         console.log('这是大师兄');
+        //         break;
+        //     case 'nhy':
+        //         console.log('这是牛牛');
+        //         break;
+        //     default:
+        //         console.log('谁也不是！')
+        // }
+
+
+        // while (1==1){
+        //     break;
+        // }
+
+
+
+
+
+
+    }
+
+    // 基本函数
+    // function f() {
+    //
+    // }
+    // f()
+
+    // 匿名函数测试
+    // var element = document.getElementById('i1');
+    // element.onclick = function () {
+    //     console.log('测试匿名函数')
+    // }
+    // function test_var() {
+    //     var name = 'dsx';
+    //     console.log(name);
+    //     console.log(age)
+    // }
+    // name = 'nhy';
+    // age = 18;
+    // function test_var_1() {
+    //     console.log(age);
+    //     console.log(name)
+    // }
+
+    const age = 18;  // 常量不能修改
+</script>
+</body>
+</html>

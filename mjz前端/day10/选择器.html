@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    选择器-->
+    <style>
+        /*id选择器*/
+        /*#i1{*/
+        /*    background-color: green;*/
+        /*    width: 100px;*/
+        /*    height: 100px;*/
+        /*}*/
+        /*class 选择器*/
+        /*.c1{*/
+        /*    background-color: green;*/
+        /*    width: 100px;*/
+        /*    height: 100px;*/
+        /*}*/
+        .wh{
+            width: 100px;
+            height: 100px;
+        }
+        .bc-1{
+            background-color: red;
+        }
+        .bc-2{
+            background-color: blue;
+        }
+        .blue{
+            background-color: blue;
+        }
+        /*标签选择器*/
+        div {
+            background-color: green;
+        }
+        /*层级选择器 很少用*/
+        /*div span{*/
+        /*    background-color: red;*/
+        /*}*/
+        /*#i1 span{*/
+        /*    */
+        /*}*/
+        /*.c1 span{*/
+        /*    */
+        /*}*/
+        /*属性选择器*/
+        div[dsx="nb"]{
+            background-color: red;
+        }
+    </style>
+
+</head>
+<body>
+<!--id 选择器-->
+<!--    <div id="i1">ID选择器</div>-->
+<!--class选择器-->
+
+<!--    <div class="c1">class选择器</div>-->
+<!--    不同颜色 相同宽高的正方型 class属性允许有多个，通过空格分隔即可-->
+<!--    <div class="wh bc-1"></div>-->
+<!--    <div class="wh bc-2"></div>-->
+
+<!--    所有的div都是绿色的-->
+<!--    <div class="wh">1111</div>-->
+
+<!--    <div>-->
+<!--        <span>dsx</span>-->
+<!--    </div>-->
+
+    <div dsx="nb" class="wh"></div>
+
+
+</body>
+</html>

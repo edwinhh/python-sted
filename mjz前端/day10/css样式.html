@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--    css 样式应用，有3处-->
+    <!--    1、标签内部通过style属性，来给标签设置css样式-->
+    <!--    2、head中增加style标签，在style标签内部，通过选择器为目标html配置css样式。-->
+    <!--    3、通过编写样式表文件 xxx.css  用link引入到当前html中。-->
+
+    <link rel="stylesheet" href="demo.css">
+    <style>
+        /*#i1{*/
+        /*    !*宽度允许百分比*!*/
+        /*    background-color: green;*/
+        /*    height: 100px;*/
+        /*    width: 100%;*/
+        /*}*/
+        .wh {
+            width: 100px;
+            height: 100px;
+        }
+
+        .bc-1 {
+            background-color: red;
+        }
+        .dis-inline {
+            /*由块级标签，变成行内标签*/
+          display: inline;
+        }
+        .dis-block{
+            /*行内转 块*/
+            display: block;
+        }
+        .dis-block-inline{
+            /*既是块也是行内*/
+            display: inline-block;
+        }
+        .c1{
+            border: 1px solid red;
+            width: 100%;
+            height: 200px;
+        }
+        .c2{
+            background-color: blue;
+            width: 100%;
+            height: 48px;
+            /*外边距*/
+            /*margin-top: 0;*/
+            /*内边距*/
+            padding-top: 0;
+
+        }
+    </style>
+
+</head>
+<body>
+<!--    标签中style属性是css的第一优先级-->
+<!--    以标签基础，由内到外 由近到远-->
+<!--    <div id="i1" style="background-color: red;height: 100px;width: 100px">背景色</div>-->
+<!--    <div id="i1">背景色</div>-->
+<!--    <div id="i2">引入文件的css</div>-->
+
+<!--    <div id="i1"></div>-->
+<!--    display -->
+<!--    <div class="dis-inline bc-1">块div 变成行内</div>-->
+
+<!--    <span class="dis-block bc-1">123</span>-->
+<!--    行内标签必须自己有内容，无法应用宽、高、外边距、内边距-->
+<!--    <span style="height: 100px;width: 100px;background-color: red">123</span>-->
+
+<!--    <span class="dis-block-inline wh bc-1"></span>-->
+
+<input type="text" placeholder="">
+    <div class="c1">
+        <div class="c2"></div>
+    </div>
+
+</body>
+</html>

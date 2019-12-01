@@ -1,0 +1,70 @@
+python
+
+
+前端语言
+    html--》将页面展示出来 比做 赤裸的人
+    css --> 修饰html标签  让html更好看  css 对html 进行修饰
+    js --》 能够让页面动起来 js
+
+
+
+DOM --> 文档对象模型
+目的：
+    操作页面上的任意的一个标签
+
+    如何定位标签？
+        getElementById
+        ElementsByClass
+    当标签没有id和class时，要用到间接定位
+        1、分析html 目标定位标签和当前标签的关系，缕清楚寻找路径
+        tmp.parentElement; // 父节点标签元素
+        tmp.children; //所有子标签
+        tmp.firstElementChild; //第一个子标签元素
+        tmp.lastElementChild; // 最后一个子标签元素
+        tmp.nextElementSibling; //下一个兄弟标签元素
+        tmp.previousElementSibling; //上一个兄弟标签元素
+
+    定位到后：
+        value
+        修改时，只要能够查看到就能修改
+        input
+        select
+
+        element.value = 'xx'
+
+
+        innerText --> 插入的永远是字符串
+
+        innerHtml --> 如果有符合标签规则的字符串，会直接变成标签。
+
+
+    操作属性
+        setAttribute(key,value): 设置属性，在标签中添加属性或自定义属性
+        removeAttribute(key): 删除属性，在标签中删除指定属性
+    操作样式表   操作的是标签的class属性 前提条件是有这个样式表
+        className = 'inner tmp1'
+        classList.add()
+        classList.remove()
+    操作style 实际操作的是标签的style属性
+        如果样式中含有 - 需要将-后面的第一个字母大写
+        element.style.xxxx = ''
+    创建标签
+        对象创建
+            obj=createElement('div')
+            obj.setAttribute()
+            添加到目标元素中，实际是添加子元素
+            先定位父元素
+            父元素.appendChild()
+
+        字符创建
+         str = '<input>'
+         insertAdjacentHTML(where,str)
+         insertAdjacentHTML('beforeBegin',str)
+         insertAdjacentHTML(beforeBegin,str) 错误的
+         beforeBegin: 插入到获取到标签的前面
+         afterBegin: 插入到获取到标签的子标签的前面
+         beforeEnd: 插入到获取到标签的子标签的后面
+         afterEnd: 插入到获取到标签的后面
+
+
+
