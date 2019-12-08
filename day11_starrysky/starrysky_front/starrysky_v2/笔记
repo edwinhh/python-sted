@@ -1,0 +1,100 @@
+html
+   <h1></h1>
+   <input> --》key=name   value=value
+   div  块 --》 无论自己有多大都占满一整行
+   span 行内 --》 自己有多大 就占多大
+   select --> key
+   <select name=''>
+        <option value='1'></option>
+   </select>
+   <a href="http://www.baidu.com" target="_blank">跳转的文案</a>
+
+   label --》 input 连用 通过id属性
+   textarea
+
+css
+    #i1{
+
+
+    }
+    .c1{
+
+    }
+    .c2{
+
+    }
+    <div class="c1" id="i1"></div>
+    <div class="c1 c2" ></div>
+
+
+dom
+   标签变成了一个可以操作的对象
+   直接定位
+       byID
+       sbyClassName
+   间接定位
+       找父亲
+       兄弟 （上、下）
+       儿子  （第一个、最后一个、所有的孩子list）
+   对象
+   createElement('input')
+   appendChild()
+
+   字符串的方式
+        str = '<input>'
+        innerHtml
+        innerText
+
+   设置属性
+
+js
+    if
+
+    2种for
+    for (var i in d){}
+
+    for (var i=0;i<d.length;i++){}
+
+    switch
+
+    function demo(){} 普通函数
+    demo()
+    var test = function (){}  匿名函数
+    test()
+
+
+js 和 dom区别？
+
+
+
+java 和 javascript关系？
+    没关系
+
+
+vue 和 js的区别？
+    vue 在js的基础上 进行了优化
+    增加vue最强大的特点 ，对数据操作特别的友好
+
+
+
+分页
+        <el-pagination
+                 修改当前页面显示多少条数据
+                @size-change="handleSizeChange"
+                获取当前是那一页
+                @current-change="handleCurrentChange"
+                默认是那一页
+                :current-page="query_search.page"
+                可以选择每页多少条数据的列表
+                :page-sizes="[5, 8, 10]"
+                每页显示多少条数据
+                :page-size="query_search.limit"
+                layout="total, sizes, prev, pager, next, jumper"
+                总数据是多少条
+                :total="count">
+        </el-pagination>
+
+作业
+
+    必须写全局参数和项目管理的页面
+    写完了的可以在把其他的写一写

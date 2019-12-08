@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+    <span>{{name}}</span>
+
+</div>
+<script src="../js/vue.js"></script>
+<script src="../js/axios.min.js"></script>
+<script>
+    new Vue({
+        el:'#app',
+        data:{
+            name:'',
+        },
+        methods:{
+
+        },
+        filters:{
+
+        },
+        // 钩子函数
+        created:function () {
+            // 数据初始化后
+            // 假设 我们现在有一个列表的页面 ，，列表的数据就可以通过created 进行请求
+            // 第一种方法
+            // axios({
+            //     method:'get',
+            //     url:'http://127.0.0.1:8080/api/project',
+            // }).then(function (response) {
+            //     console.log(response)
+            // })
+            // 第二种方法
+            axios({
+                method:'get',
+                url:'http://127.0.0.1:8080/api/project',
+                // es6最新的函数定义方式
+            }).then((response)=>{
+
+
+
+            }).catch((error)=>{
+                console.log(error)
+            })
+
+        },
+        // mounted:function () {
+        //     // 标签和数据相结合前调用了mounted
+        //   console.log('mounted')
+        // }
+    })
+
+</script>
+</body>
+</html>

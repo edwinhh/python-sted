@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+<!--        模板语言-->
+<!--        <span>{{msg}}</span>-->
+<!--        <div>{{flag?'男生':'女生'}}</div> 三元运算-->
+<!--        <span>{{num+1}}</span>-->
+<!--        v-bind 用于给标签的属性绑定 变量 简写 直接:href-->
+<!--        <a v-bind:href="a_href">跳转</a>-->
+<!--        <a :href="a_href">跳转</a>-->
+<!--        v-on 用于绑定事件  简写直接在事件前增加@-->
+<!--        <input type="button" v-on:click="change" value="修改">-->
+<!--        <input type="button" @click="change" value="修改">-->
+
+
+
+<!--        <span v-if="number==10086">移动-v-if</span>-->
+<!--        <span v-else-if="number==10010">联通</span>-->
+<!--        <span v-else>电信</span>-->
+
+
+<!--        <span v-show="number==10086">移动-v-show</span>-->
+<!--        <span v-show="number==100861">111111</span>-->
+<!--        循环写在那个标签上，就循环生成那个标签-->
+<!--        <div v-for="(item,index) in games">{{item}}&#45;&#45;{{index}}</div>-->
+
+<!--        <div v-for="(item,key) in dict_games">{{item}}&#45;&#45;{{key}}</div>-->
+
+            <span></span>
+
+
+
+    </div>
+
+
+<script src="../js/vue.js"></script>
+<script>
+    // 最基础实例Vue的方法
+    var vm = new Vue({
+        // 元素
+        el:'#app',
+        // 存储数据 --- *****
+        data:{
+            msg:'hi vue!',
+            flag:true,
+            num:1,
+            a_href:'http://www.baidu.com',
+            number:10086,
+            games:['绝地求生', '英雄联盟', '王者荣耀'],
+            dict_games:{'name':'绝地求生', 'company':'蓝洞'}
+        },
+        methods:{
+            // change:function () {
+            //
+            // },
+            change(){
+                this.a_href = 'http://www.imdsx.cn'
+            },
+
+
+        }
+
+    })
+
+
+
+
+
+
+</script>
+</body>
+</html>

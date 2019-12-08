@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+<!--        <span>span&ndash;&gt;{{name}}</span><br>-->
+<!--&lt;!&ndash;        v-model 双向数据绑定 input&ndash;&gt;-->
+<!--        <input type="text" v-model="username">-->
+<!--        <input type="text" v-model="password">-->
+<!--        <input type="button" @click="change" value="修改">-->
+
+
+<!--        <span>性别&#45;&#45;{{genderValue}}</span><br>-->
+<!--    <input type="radio" value="1" name="gender" v-model="genderValue"> 男-->
+<!--    <input type="radio" value="2" name="gender" v-model="genderValue"> 女-->
+
+<!--        <span>请选择你喜欢的电影&#45;&#45;{{movies}}</span><br>-->
+<!--    <input type="checkbox" value="1" v-model="movies"> 变形金刚-->
+<!--    <input type="checkbox" value="2" v-model="movies"> 复仇者联盟-->
+<!--    <input type="checkbox" value="3" v-model="movies"> 飞驰人生-->
+
+
+<!--        <span>请选择你喜欢的电影: {{selectMovie}}</span><br>-->
+<!--        <select v-model="selectMovie">-->
+<!--            <option v-for="option in options" :value="option.id">{{option.name}}</option>-->
+<!--        </select>-->
+
+<!--        过滤器-->
+        <span>{{age|changeAge('dsx','真')}}</span>
+
+    </div>
+
+
+<script src="../js/vue.js"></script>
+<script>
+
+    // 1==变形金刚 2复仇者
+    new Vue({
+        el:'#app',
+        data:{
+            username:'',
+            password:'',
+            genderValue:2,
+            movies:[2,3],
+            selectMovie:"",
+            options:[{"name":"变形金刚","id":1}, {"name":"复仇者联盟","id":2}, {"name":"飞驰人生","id":3}],
+            age:18
+
+        },
+        methods:{
+            change(){
+                this.name = '';
+            }
+        },
+        filters:{
+            changeAge(age,name,f){
+                if (age==18){
+                    return name+f+'年轻'
+                }
+            }
+        }
+    })
+
+</script>
+</body>
+</html>
