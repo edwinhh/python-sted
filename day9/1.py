@@ -1,3 +1,5 @@
+import flask
+
 class Singleton:
     instance = None
 

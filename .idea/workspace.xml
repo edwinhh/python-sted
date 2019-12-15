@@ -2,309 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb2eb7d7-482d-4319-b211-94d584408b73" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/README.en.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/layuiAdmin原版.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/Index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/app/content/comment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/app/content/contform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/app/content/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/app/content/listform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/app/content/tags.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/app/content/tagsform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/app/forum/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/app/forum/listform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/app/forum/replys.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/app/forum/replysform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/app/message/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/app/workorder/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/app/workorder/listform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/anim/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/auxiliar/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/badge/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/button/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/carousel/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/code/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/flow/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/form/element.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/form/group.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/grid/all.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/grid/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/grid/mobile-pc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/grid/mobile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/grid/speed-dial.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/grid/stack.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/laydate/demo1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/laydate/demo2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/laydate/special-demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/laydate/theme.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/layer/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/layer/special-demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/layer/theme.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/laypage/demo1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/laypage/demo2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/nav/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/panel/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/progress/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/rate/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/table/auto.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/table/cellEdit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/table/cellEvent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/table/checkbox.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/table/data.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/table/fixed.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/table/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/table/height.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/table/initSort.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/table/operate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/table/operate_bak.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/table/page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/table/reload.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/table/resetPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/table/simple.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/table/static.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/table/style.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/table/thead.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/table/tostatic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/tabs/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/timeline/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/upload/demo1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/upload/demo2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/component/util/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/demo/table/user/data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/home/console.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/home/homepage1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/home/homepage2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/js/axios.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/js/case_main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/js/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/js/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/js/qrcode.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/js/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/js/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/json_viewer.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/json/console/prograss.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/json/console/top-card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/json/console/top-search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/json/content/comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/json/content/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/json/content/tags.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/json/forum/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/json/forum/replys.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/json/message/all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/json/message/direct.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/json/message/notice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/json/table/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/json/table/demo2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/json/table/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/json/table/user30.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/json/useradmin/mangadmin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/json/useradmin/role.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/json/useradmin/webuser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/json/workorder/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/css/layui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/css/layui.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/css/modules/code.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/css/modules/layer/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/css/modules/layer/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/font/iconfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/images/face/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/lay/modules/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/lay/modules/code.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/lay/modules/colorpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/lay/modules/element.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/lay/modules/flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/lay/modules/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/lay/modules/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/lay/modules/laydate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/lay/modules/layedit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/lay/modules/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/lay/modules/laypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/lay/modules/laytpl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/lay/modules/mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/lay/modules/rate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/lay/modules/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/lay/modules/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/lay/modules/transfer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/lay/modules/tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/lay/modules/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/lay/modules/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/layui.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/layui/layui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/lib/admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/lib/extend/echarts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/lib/extend/echartsTheme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/lib/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/lib/view.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/modules/case_main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/modules/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/modules/console.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/modules/contlist.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/modules/forum.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/modules/message.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/modules/prograss.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/modules/sample.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/modules/senior.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/modules/set.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/modules/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/modules/useradmin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/modules/workorder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/style/admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/style/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/style/res/layui-logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/style/res/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/style/res/logo1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/style/res/template/character.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/style/res/template/huge.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/style/res/template/portrait.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/style/template.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/tpl/system/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/layuiadmin/tpl/system/theme.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/mock.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/senior/echarts/bar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/senior/echarts/line.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/senior/echarts/map.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/set/system/email.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/set/system/website.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/set/user/info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/set/user/password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/case-collection-form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/case-collection-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/case-form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/case-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/case_collection_report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/interface-form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/interface-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/join_case.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/parameter-form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/parameter-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/project-form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/project-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/qr_code.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/single_report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/case.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/for-if-.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/mjz.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/双向数据绑定.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/生命周期-axios.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/笔记" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/template/addresslist.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/template/goodslist.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/template/msgboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/template/personalpage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/template/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/template/tips/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/template/tips/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/user/administrators/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/user/administrators/role.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/user/forget.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/user/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/user/reg.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/user/user/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/views/app/content/contform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/views/app/content/listform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/views/app/content/tagsform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/views/app/forum/listform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/views/app/forum/replysform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/views/app/workorder/listform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/views/user/administrators/adminform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/views/user/administrators/roleform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/views/user/user/userform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/服务端接口文档地址.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/笔记.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day11-starrysky" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day11_starrysky/starrysky_front/mock.py" beforeDir="false" afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/mock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/mjz.html" beforeDir="false" afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/mjz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day9/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/day9/1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -325,106 +26,67 @@
     <SUITE FILE_PATH="coverage/python_sted$a.coverage" NAME="a Coverage Results" MODIFIED="1569058859182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day3" />
     <SUITE FILE_PATH="coverage/python_sted$pip.coverage" NAME="修改pip源 Coverage Results" MODIFIED="1572682063656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_sted$day4.coverage" NAME="day4作业 Coverage Results" MODIFIED="1571487153390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day4" />
+    <SUITE FILE_PATH="coverage/python_sted$mock.coverage" NAME="mock Coverage Results" MODIFIED="1576381836521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day11_starrysky/starrysky_front" />
+    <SUITE FILE_PATH="coverage/python_sted$mock__1_.coverage" NAME="mock (1) Coverage Results" MODIFIED="1576402960143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day12_starrysky/starrysky_front" />
     <SUITE FILE_PATH="coverage/python_sted$a__1_.coverage" NAME="a (1) Coverage Results" MODIFIED="1571480546888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day4" />
     <SUITE FILE_PATH="coverage/python_sted$tools.coverage" NAME="tools Coverage Results" MODIFIED="1572059031571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day4" />
     <SUITE FILE_PATH="coverage/python_sted$day5_.coverage" NAME="day5_作业 Coverage Results" MODIFIED="1572682527028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day5" />
     <SUITE FILE_PATH="coverage/python_sted$.coverage" NAME="作业 Coverage Results" MODIFIED="1574002581824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day8" />
-    <SUITE FILE_PATH="coverage/python_sted$1.coverage" NAME="1 Coverage Results" MODIFIED="1573528165955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day7" />
+    <SUITE FILE_PATH="coverage/python_sted$1.coverage" NAME="1 Coverage Results" MODIFIED="1576375659249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day9" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day9/utp/projects/litemall/run.py">
+      <file leaf-file-name="mjz.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/mjz.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+            <state relative-caret-position="1011">
+              <caret line="150" column="51" selection-start-line="150" selection-start-column="51" selection-end-line="150" selection-end-column="51" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="n#style#0;n#el-table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#el-table#0;n#el-dialog#0;n#el-dialog#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day9/utp/utils/utils.py">
+      <file leaf-file-name="interface-form.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/interface-form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+            <state relative-caret-position="-3117" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="interface-list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/interface-list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="135" column="53" selection-start-line="135" selection-start-column="53" selection-end-line="135" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_address.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day9/utp/projects/litemall/cases/test_address.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+      <file leaf-file-name="case-collection.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day12_starrysky/starrysky_front/starrysky_v2/case-collection.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="request.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day9/utp/utils/request.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/day9/utp/projects/litemall/cases/1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utp.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day9/utp/logs/utp.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44594">
-              <caret line="2027" selection-start-line="2027" selection-end-line="2027" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setting.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day9/utp/config/setting.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/python3/Lib/site-packages/nnlog/__init__.py">
+      <file leaf-file-name="mock.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/day12_starrysky/starrysky_front/mock.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="8" selection-start-column="8" selection-end-column="8" />
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nhylog.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/python3/Lib/site-packages/nnlog/nhylog.py">
+      <file leaf-file-name="case.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/case.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-              <folding>
-                <element signature="e#23#37#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="131">
+              <caret line="142" selection-start-line="142" selection-end-line="164" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -441,6 +103,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>self,</find>
+      <find>element</find>
+      <find>add_collection</find>
     </findStrings>
     <replaceStrings>
       <replace>rc,</replace>
@@ -486,7 +150,6 @@
         <option value="$PROJECT_DIR$/day6/网络请求.py" />
         <option value="$PROJECT_DIR$/day8/作业.py" />
         <option value="$PROJECT_DIR$/day9/utp/utils/utils.py" />
-        <option value="$PROJECT_DIR$/day9/1.py" />
         <option value="$PROJECT_DIR$/day9/utp/projects/litemall/cases/test_address.py" />
         <option value="$PROJECT_DIR$/day9/utp/projects/litemall/const.py" />
         <option value="$PROJECT_DIR$/day9/utp/utils/SendMailAttech.py" />
@@ -497,6 +160,13 @@
         <option value="C:/python3/Lib/site-packages/nnlog/nhylog.py" />
         <option value="$PROJECT_DIR$/day9/utp/logs/utp.log" />
         <option value="$PROJECT_DIR$/day9/utp/projects/litemall/cases/1.py" />
+        <option value="$PROJECT_DIR$/day9/1.py" />
+        <option value="$PROJECT_DIR$/day11_starrysky/starrysky_front/mock.py" />
+        <option value="$PROJECT_DIR$/day11_starrysky/starrysky_front/服务端接口文档地址.txt" />
+        <option value="$PROJECT_DIR$/day11_starrysky/starrysky_front/user/login.html" />
+        <option value="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/case.html" />
+        <option value="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/mjz.html" />
+        <option value="$PROJECT_DIR$/day12_starrysky/starrysky_front/mock.py" />
       </list>
     </option>
   </component>
@@ -510,8 +180,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="476" />
-    <option name="y" value="92" />
+    <option name="x" value="751" />
+    <option name="y" value="155" />
     <option name="width" value="1183" />
     <option name="height" value="884" />
   </component>
@@ -530,13 +200,20 @@
             <path>
               <item name="python_sted" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_sted" type="462c0819:PsiDirectoryNode" />
-              <item name="day11_starrysky" type="462c0819:PsiDirectoryNode" />
+              <item name="day12_starrysky" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python_sted" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_sted" type="462c0819:PsiDirectoryNode" />
-              <item name="day11_starrysky" type="462c0819:PsiDirectoryNode" />
+              <item name="day12_starrysky" type="462c0819:PsiDirectoryNode" />
               <item name="starrysky_front" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_sted" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_sted" type="462c0819:PsiDirectoryNode" />
+              <item name="day12_starrysky" type="462c0819:PsiDirectoryNode" />
+              <item name="starrysky_front" type="462c0819:PsiDirectoryNode" />
+              <item name="starrysky_v2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -550,7 +227,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -576,26 +253,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.1 (1)">
-    <configuration name="网络请求" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python sted" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day6" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day6/网络请求.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.mock (1)">
     <configuration name="1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python sted" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -616,38 +274,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python sted" />
+      <module name="python_sted" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\python3\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day9" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day9/1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="继承" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python sted" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day7" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day7/继承.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -691,20 +330,39 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="const" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python sted" />
+    <configuration name="mock (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_sted" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day9/utp/projects/litemall" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day12_starrysky/starrysky_front" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day9/utp/projects/litemall/const.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day12_starrysky/starrysky_front/mock.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="mock" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_sted" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day11_starrysky/starrysky_front" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day11_starrysky/starrysky_front/mock.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -750,18 +408,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.a" />
-      <item itemvalue="Python.网络请求" />
       <item itemvalue="Python.1" />
-      <item itemvalue="Python.const" />
       <item itemvalue="Python.send_message" />
       <item itemvalue="Python.1 (1)" />
+      <item itemvalue="Python.mock" />
+      <item itemvalue="Python.mock (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mock (1)" />
+        <item itemvalue="Python.mock" />
+        <item itemvalue="Python.1" />
         <item itemvalue="Python.1 (1)" />
         <item itemvalue="Python.send_message" />
-        <item itemvalue="Python.const" />
-        <item itemvalue="Python.1" />
       </list>
     </recent_temporary>
   </component>
@@ -791,24 +450,24 @@
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32925472" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26760563" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="SciView" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15724947" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Data View" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
@@ -825,84 +484,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/day2/作业/3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="826">
-          <caret line="47" column="8" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day6/发送邮件.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/修改pip源.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/操作mysql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1078">
-          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5_作业.py" />
-    <entry file="file://$PROJECT_DIR$/day6/笔记.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/op_redis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1606">
-          <caret line="73" column="32" selection-start-line="2" selection-end-line="73" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/操作redis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/上周作业.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day7/1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day6/写日志.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day6/登录.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day7/继承.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -930,9 +511,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1188" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day6/导出excel.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/day6/新excel操作.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1026,13 +604,6 @@
         <state relative-caret-position="-891" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day9/1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/python3/Lib/site-packages/openpyxl/worksheet/worksheet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -1079,9 +650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1108,18 +676,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/day9/utp/utils/request.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
+        <state relative-caret-position="418">
           <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day9/utp/config/setting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -1134,19 +692,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding>
-            <element signature="e#23#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/day9/utp/projects/litemall/cases/test_address.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="110">
           <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1157,12 +709,107 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/day9/1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2825" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11_starrysky/starrysky_front/服务端接口文档地址.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11_starrysky/starrysky_front/app/forum/listform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-660" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day9/utp/config/setting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/day9/utp/projects/litemall/cases/1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
+        <state relative-caret-position="343">
           <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11_starrysky/starrysky_front/mock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7867">
+          <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11_starrysky/starrysky_front/user/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1498" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11_starrysky/starrysky_front/user/user/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1716" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11_starrysky/starrysky_front/Index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="104" column="54" selection-start-line="104" selection-start-column="54" selection-end-line="104" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/case.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="142" selection-start-line="142" selection-end-line="164" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/mjz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1011">
+          <caret line="150" column="51" selection-start-line="150" selection-start-column="51" selection-end-line="150" selection-end-column="51" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="n#style#0;n#el-table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-table#0;n#el-dialog#0;n#el-dialog#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/interface-form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3117" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/interface-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="135" column="53" selection-start-line="135" selection-start-column="53" selection-end-line="135" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day12_starrysky/starrysky_front/starrysky_v2/case-collection.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day12_starrysky/starrysky_front/mock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>

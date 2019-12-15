@@ -1,3 +1,4 @@
+#coding:utf-8
 import flask
 from flask_cors import CORS
 

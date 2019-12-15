@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <style>
+        .text {
+            font-size: 14px;
+        }
+
+        .item {
+            margin-bottom: 18px;
+        }
+
+        .box-card {
+            width: 100%;
+        }
+
+    </style>
+    <style>
+        .demo-table-expand {
+            font-size: 0;
+        }
+
+        .demo-table-expand label {
+            width: 90px;
+            color: #99a9bf;
+        }
+
+        .demo-table-expand .el-form-item {
+            margin-right: 0;
+            margin-bottom: 0;
+            width: 50%;
+        }
+
+        .el-form-item div {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <div id="bar">
+        <!--搜索、筛选-->
+        <el-form :inline="true" class="demo-form-inline">
+            <el-form-item>
+                <el-input placeholder="搜索" v-model="filter_query.search"></el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-select placeholder="项目" v-model="filter_query.project">
+                    <el-option v-for="item in projects" :key="item.id" :label="item.name" :value="item.id"></el-option>
+                </el-select>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" @click="search">查询</el-button>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" @click="add_collection">添加</el-button>
+            </el-form-item>
+        </el-form>
+    </div>
+    <div id="table">
+        <el-table
+                ref="multipleTable"
+                :data="tableData"
+                tooltip-effect="dark"
+                style="width: 100%"
+                @selection-change="handleSelectionChange" v-loading="loading" element-loading-text="玩命加载中...">
+            <el-table-column
+                    type="selection"
+                    width="55">
+            </el-table-column>
+            <el-table-column
+                    prop="name"
+                    label="接口名称">
+            </el-table-column>
+            <el-table-column
+                    prop="uri"
+                    label="接口路径">
+            </el-table-column>
+            <el-table-column
+                    prop="project_name"
+                    label="归属项目"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column
+                    prop="user"
+                    label="创建用户"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column
+                    prop="update_time"
+                    label="修改时间"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column
+                    prop="create_time"
+                    label="创建时间"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column label="操作">
+                <template slot-scope="scope">
+                    <el-button
+                            size="mini"
+                            @click="handle_edit(scope.row)">编辑
+                    </el-button>
+                    <el-button
+                            size="mini"
+                            type="danger"
+                            @click="handle_delete(scope.row)">删除
+                    </el-button>
+                </template>
+            </el-table-column>
+        </el-table>
+
+
+    </div>
+    <div id="edit">
+        <el-dialog :title="dialog_title" :visible.sync="dialogFormVisible" v-loading="loading"
+                   element-loading-text="玩命加载中...">
+
+            <el-form :model="form">
+                <el-tabs v-model="activeName">
+                    <el-tab-pane label="接口信息" name="first">
+                        <el-form-item label="接口名称" :label-width="formLabelWidth">
+                            <el-input v-model="form.name" style="width: 80%"></el-input>
+                        </el-form-item>
+                        <el-form-item label="接口路径" :label-width="formLabelWidth">
+                            <el-input v-model="form.uri" style="width: 80%"></el-input>
+                        </el-form-item>
+                        <el-form-item label="归属项目" :label-width="formLabelWidth">
+                            <el-select v-model="form.project" style="width: 80%">
+                                <el-option v-for="item in projects" :key="item.id" :label="item.name"
+                                           :value="item.id"></el-option>
+                            </el-select>
+                        </el-form-item>
+                    </el-tab-pane>
+                    <el-tab-pane label="默认参数" name="second">
+                        <el-form :inline="true" class="demo-form-inline">
+                            <el-form-item
+                                    v-for="(domain, index) in paramsForm"
+                                    :key="domain.key"
+                                    style="width: 100%">
+                                <el-input v-model="domain.name" style="width: 40%"></el-input>
+                                <el-input v-model="domain.value" style="width: 40%"></el-input>
+                                <el-button @click.prevent="removeParams(domain)">删除</el-button>
+                                <el-button @click="addParams">添加</el-button>
+                            </el-form-item>
+                        </el-form>
+                    </el-tab-pane>
+                    <el-tab-pane label="默认header" name="third">
+                        <el-form :inline="true" class="demo-form-inline">
+                            <el-form-item
+                                    v-for="(domain, index) in headersForm"
+                                    :key="domain.key"
+                                    style="width: 100%">
+                                <el-input v-model="domain.name" style="width: 40%"></el-input>
+                                <el-input v-model="domain.value" style="width: 40%"></el-input>
+                                <el-button @click.prevent="removeHeaders(domain)">删除</el-button>
+                                <el-button @click="addHeaders">添加</el-button>
+                            </el-form-item>
+                        </el-form>
+                    </el-tab-pane>
+                </el-tabs>
+
+
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+                <el-button @click="dialogFormVisible = false">取 消</el-button>
+                <el-button type="primary" @click="operate" :loading="button_loading">确 定</el-button>
+            </div>
+        </el-dialog>
+    </div>
+    <div id="pagination">
+        <el-pagination
+                @size-change="handleSizeChange"
+                @current-change="handleCurrentChange"
+                :current-page="currentPage"
+                :page-sizes="[4, 5, 6, 7]"
+                :page-size="filter_query.limit"
+                layout="total, sizes, prev, pager, next, jumper"
+                :total="total">
+        </el-pagination>
+    </div>
+</div>
+
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="https://cdn.bootcss.com/axios/0.19.0/axios.min.js"></script>
+<script src="../js/config.js"></script>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            currentPage: 1,
+            total: 0,
+            filter_query: {
+                project: undefined,
+                search: undefined,
+                limit: 4,
+                page: 1
+            },
+            projects: [],
+            tableData: [],
+            dialogTableVisible: false,
+            dialogFormVisible: false,
+            collectionFormVisible: false,
+            showResultVisible: false,
+            showResultInnerVisible: false,
+            multipleSelection: null,
+            dialog_title: '添加',
+            form: {
+                name: '',
+                project: '',
+                uri: '',
+                params: '',
+                headers: '',
+                user: 1
+            },
+            paramsForm: [{
+                value: '',
+                name: ''
+            }],
+            headersForm: [{
+                value: '',
+                name: ''
+            }],
+            formLabelWidth: '120px',
+            case_data: [],
+            value: [],
+            loading: false,
+            button_loading: false,
+            id: undefined,
+            report_data: '',
+            report_detail_query: '',
+            report_detail_data: [],
+            activeName: 'first'
+        },
+        mounted: function () {
+            this.get_project_data();
+            this.get_page_data();
+        },
+        methods: {
+            addParams() {
+                this.paramsForm.push({
+                    value: '',
+                    name: '',
+                    key: Date.now()
+                });
+            },
+            removeParams(item) {
+                var index = this.paramsForm.indexOf(item);
+                if (this.paramsForm.length == 1) {
+                    this.$message.error('这是最后一个了,不可以在删除了！');
+                    return
+                }
+                if (index !== -1) {
+                    this.paramsForm.splice(index, 1)
+                }
+            },
+            addHeaders() {
+                this.headersForm.push({
+                    value: '',
+                    name: '',
+                    key: Date.now()
+                });
+            },
+            removeHeaders(item) {
+                var index = this.headersForm.indexOf(item);
+                if (index !== -1) {
+                    this.headersForm.splice(index, 1)
+                }
+            },
+            getReport(row) {
+                axios({
+                    url: host + '/api/collection_report?id=' + row.id,
+                    method: 'get',
+                }).then((response) => {
+                    this.showResultVisible = true;
+                    var data = response.data.data;
+                    this.report_detail_query = 'case_collection_id=' + row.id + '&report_batch=' + data.report_batch;
+                    this.report_data = data;
+                })
+            },
+            getDetailReprot() {
+                axios({
+                    method: 'get',
+                    url: host + '/api/report?' + this.report_detail_query,
+                }).then((response) => {
+                    this.showResultInnerVisible = true;
+                    this.report_detail_data = response.data.data
+                });
+
+            },
+            joinCase() {
+                let data = {
+                    join_case_list: JSON.stringify(this.value),
+                    id: this.id,
+                };
+                axios({
+                    method: 'post',
+                    url: host + '/api/join_case',
+                    data: this.data_to_string(data)
+                }).then((response) => {
+
+                    if (response.data.code == 0) {
+                        this.collectionFormVisible = false;
+                        this.get_page_data();
+                    } else {
+                        this.$message({
+                            type: 'error',
+                            message: response.data.msg
+                        })
+                    }
+                }).catch((error) => {
+                    this.$message({
+                        type: 'error',
+                        message: error
+                    })
+                })
+            },
+            handleSizeChange(val) {
+                this.filter_query.limit = val;
+                this.filter_query.page = 1;
+                this.get_page_data();
+            },
+            handleCurrentChange(val) {
+                this.filter_query.page = val;
+                this.get_page_data();
+            },
+            data_to_string(data) {
+                let tmp = new FormData();
+                for (var key in data) {
+                    tmp.append(key, data[key])
+                }
+                return tmp
+            },
+            get_project_data: function () {
+                axios({
+                    method: 'get',
+                    url: host + '/api/project',
+                }).then((response) => {
+                    this.projects = response.data.data;
+                    console.log(this.projects)
+
+                })
+            }
+            ,
+            get_page_data: function () {
+                this.loading = true; //
+                axios({
+                    method: 'get',
+                    url: host + '/api/interface',
+                    params: this.filter_query
+                }).then((response) => {
+                    this.tableData = response.data.data;
+                    this.total = response.data.count;
+                    this.loading = false; //
+                })
+            }
+            ,
+            search: function () {
+                this.filter_query.page = 1;
+                this.get_page_data()
+            }
+            ,
+            handleSelectionChange(val) {
+                var ids = [];
+                for (var num in val) {
+                    ids.push(val[num].id)
+                }
+                this.multipleSelection = ids
+            }
+            ,
+            handle_edit(row) {
+                this.reset_params_headers(row);
+                this.form = Object.assign({}, {name: row.name, project: row.project, uri: row.uri, id: row.id}); //深拷贝
+                this.dialog_title = "编辑";
+                this.dialogFormVisible = true //打开模态框
+            },
+            get_join_case(row) {
+                this.collectionFormVisible = true;
+                axios({
+                    method: 'get',
+                    url: host + '/api/join_case',
+                    params: {
+                        project_id: row.project_id,
+                        id: row.id
+                    }
+                }).then((response) => {
+                    this.id = row.id;
+                    this.case_data = response.data.data.all_case;
+                    this.value = response.data.data.join_case;
+                })
+            },
+            handle_delete(row) {
+                this.$confirm('确认删除当前集合吗？', '提示', {
+                    confirmButtonText: '确定',
+                    cancelButtonText: '取消',
+                    type: 'warning'
+                }).then(() => {
+                    axios({
+                        method: 'delete',
+                        url: host + '/api/case_collection?id=' + row.id
+                    }).then((response) => {
+                        this.$message({
+                            type: 'success',
+                            message: '删除成功'
+                        });
+                        this.get_page_data();
+
+                    }).catch((error) => {
+                        this.$message({
+                            type: 'error',
+                            message: error
+                        });
+                    })
+
+                }).catch(() => {
+                    this.$message({
+                        type: 'info',
+                        message: '取消删除'
+                    });
+                })
+
+            },
+            add_collection() {
+                this.reset_form();
+                this.dialog_title = "添加";
+                this.dialogFormVisible = true
+            },
+            reset_form() {
+                //form数据置为空
+                this.form = {
+                    name: '',
+                    project_id: '',
+                    uri: '',
+                    params: '',
+                    headers: '',
+                    user: 1
+                }
+            },
+            set_params_headers() {
+                let params = {};
+                for (var num in this.paramsForm) {
+                    let item = this.paramsForm[num];
+                    params[item.name] = item.value;
+                }
+                this.form.params = JSON.stringify(params);
+
+                let headers = {};
+                for (var num in this.headersForm) {
+                    let item = this.headersForm[num];
+                    headers[item.name] = item.value;
+                }
+                this.form.headers = JSON.stringify(headers)
+            },
+            reset_params_headers(data) {
+                let params = JSON.parse(data.params);
+                let headers = JSON.parse(data.headers);
+                this.paramsForm = [];
+                for (var key in params) {
+                    this.paramsForm.push({name: key, value: params[key]})
+                }
+                this.headersForm = [];
+                for (var key in headers) {
+                    this.headersForm.push({name: key, value: headers[key]})
+                }
+            },
+            operate() {
+                this.button_loading = true;
+                if (this.dialog_title == '添加') {
+                    var method = 'post';
+                    var url = host + '/api/interface';
+                } else if (this.dialog_title == '编辑') {
+                    var method = 'put';
+                    var url = host + '/api/interface?id=' + this.form.id;
+                }
+                this.set_params_headers();
+                axios({
+                    method: method,
+                    url: url,
+                    data: this.data_to_string(this.form),
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    }
+
+                }).then((response) => {
+                    this.button_loading = false;
+                    if (response.data.code == 0) {
+                        this.dialogFormVisible = false; //关闭模态框
+                        this.get_page_data();
+                    } else {
+                        this.$message({
+                            type: 'error',
+                            message: response.data.msg
+                        })
+                    }
+                }).catch((error) => {
+                    this.button_loading = false;
+                    this.$message({
+                        type: 'error',
+                        message: error
+                    });
+                })
+
+            },
+        }
+        ,
+        filters: {
+            status: function (num) {
+                if (num == 3) {
+                    return '运行中'
+                } else if (num == 2) {
+                    return '未运行'
+                } else {
+                    return '执行完毕'
+                }
+            }
+        }
+
+    })
+</script>
+</body>
+</html>

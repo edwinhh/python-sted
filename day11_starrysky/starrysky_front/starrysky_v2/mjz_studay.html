@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="../js/index.css">
+</head>
+<body>
+
+<div id="app">
+    <div id="search">
+        <el-form :inline="true" class="demo-form-inline">
+            <el-form-item>
+                <el-input v-model="query_search.search" placeholder="搜索"></el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-select v-model="query_search.project">
+                    <el-option v-for="item in projects" :key="item.id" :value="item.id" :label="item.name"></el-option>
+                </el-select>
+            </el-form-item>
+
+            <el-form-item>
+                <el-button type="primary" @click="search">查询</el-button>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" @click="add_collection">添加</el-button>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" @click="onSubmit">运行</el-button>
+            </el-form-item>
+        </el-form>
+    </div>
+    <div id="table">
+        <el-table
+                ref="multipleTable"
+                :data="case_collection_data"
+                tooltip-effect="dark"
+                style="width: 100%"
+                @selection-change="handleSelectionChange">
+            <el-table-column
+                    type="selection"
+                    width="55">
+            </el-table-column>
+            <el-table-column
+                    label="集合名称"
+                    width="120">
+                <template slot-scope="scope">
+                    <el-button type="text">{{scope.row.name}}</el-button>
+                </template>
+            </el-table-column>
+            <el-table-column
+                    prop="desc"
+                    label="描述"
+                    width="120">
+            </el-table-column>
+            <el-table-column
+                    prop="project_name"
+                    label="归属项目"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column
+                    prop="case_count"
+                    label="用例数量"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column
+                    prop="report_name"
+                    label="测试报告"
+                    show-overflow-tooltip>
+                <el-button>查看</el-button>
+            </el-table-column>
+            <el-table-column
+                    prop="user"
+                    label="创建用户"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column
+                    label="状态"
+                    show-overflow-tooltip>
+                <template slot-scope="scope">
+                    <el-tag type="danger">{{ scope.row.status|replaceStatus }}</el-tag>
+                </template>
+            </el-table-column>
+            <el-table-column
+                    prop="create_time"
+                    label="创建时间"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column
+                    prop="address"
+                    label="操作"
+                    show-overflow-tooltip>
+                <el-button>选择用例</el-button>
+                <el-button type="danger">删除</el-button>
+            </el-table-column>
+        </el-table>
+    </div>
+    <div id="pagination">
+        <el-pagination
+                @size-change="handleSizeChange"
+                @current-change="handleCurrentChange"
+                :current-page="query_search.page"
+                :page-sizes="[5,10]"
+                :page-size="query_search.limit"
+                layout="total, sizes, prev, pager, next, jumper"
+                :total="count">
+        </el-pagination>
+
+    </div>
+    <div id="edit">
+        <el-dialog :title="dialog_title" :visible.sync="dialogFormVisible" v-loading="loading"
+                   element-loading-text="玩命加载中...">
+            <el-form :model="form">
+                <el-form-item label="集合名称" :label-width="formLabelWidth">
+                    <el-input v-model="form.name" autocomplete="off"></el-input>
+                </el-form-item>
+                <el-form-item label="集合描述" :label-width="formLabelWidth">
+                    <el-input v-model="form.desc" autocomplete="off"></el-input>
+                </el-form-item>
+                <el-form-item label="归属项目" :label-width="formLabelWidth">
+                    <el-select v-model="form.project_id" placeholder="请选择活动区域">
+                        <el-option v-for="item in projects" :key="item.id" :label="item.name"
+                                   :value="item.id"></el-option>
+                    </el-select>
+                </el-form-item>
+
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+                <el-button @click="dialogFormVisible = false">取 消</el-button>
+                <el-button type="primary" @click="operate" :loading="button_loading">确 定</el-button>
+            </div>
+        </el-dialog>
+
+    </div>
+
+
+    <!-- 引入组件库 -->
+    <script src="../js/vue.js"></script>
+    <script src="../js/axios.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/config.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                query_search: {
+                    search: undefined,
+                    project: undefined,
+                    page: 1,
+                    limit: 5
+                },
+                projects: [],
+                dialogTableVisible: false,
+                dialogFormVisible: false,
+                case_collection_data: [],
+                multipleSelection: [],
+                count: 0,
+                form: {
+                    name: '',
+                    project_id: '',
+                    desc: '',
+                },
+
+            },
+            methods: {
+                search() {
+                    this.get_page_data()
+                },
+                handleSizeChange(val) {
+                    this.query_search.limit = val;
+                    this.get_page_data()
+                },
+                handleCurrentChange(val) {
+                    this.query_search.page = val;
+                    this.get_page_data()
+                },
+                handleSelectionChange(val) {
+                    let ids = [];
+                    for (var num in val) {
+                        ids.push(val[num].id)
+                    }
+                    this.multipleSelection = ids;
+                },
+                onSubmit() {
+                    console.log('submit!');
+                },
+                add_collection() {
+                    this.reset_form();
+                    this.dialog_title = "添加";
+                    this.dialogFormVisible = true
+                },
+                reset_form() {
+                    //form数据置为空
+                    this.form = {
+                        name: '',
+                        project_id: '',
+                        desc: ''
+                    }
+                },
+
+                get_project_data() {
+                    axios({
+                        method: 'get',
+                        url: host + '/api/project'
+                    }).then((response) => {
+
+                        this.projects = response.data.data;
+                    })
+                },
+
+
+                get_page_data() {
+                    axios({
+                        method: 'get',
+                        url: host + '/api/case_collection',
+                        params: this.query_search
+                    }).then((response) => {
+                        this.case_collection_data = response.data.data;
+                        this.count = response.data.count;
+                    })
+                }
+            },
+            created: function () {
+                // 请求项目接口 获取项目数据
+                this.get_project_data();
+                // 获取页面的数据
+                this.get_page_data()
+            },
+            filters: {
+                replaceStatus(status) {
+                    if (status == 3) {
+                        return '运行中'
+                    }
+                }
+            }
+        })
+
+
+    </script>
+</body>
+</html>
