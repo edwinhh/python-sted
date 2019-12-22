@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb2eb7d7-482d-4319-b211-94d584408b73" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/python_sted.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python_sted.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day11_starrysky/starrysky_front/mock.py" beforeDir="false" afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/mock.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/mjz.html" beforeDir="false" afterPath="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/mjz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day9/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/day9/1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day12_starrysky/starrysky_front/mock.py" beforeDir="false" afterPath="$PROJECT_DIR$/day12_starrysky/starrysky_front/mock.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,7 +39,7 @@
       <file leaf-file-name="mjz.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/mjz.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1011">
+            <state relative-caret-position="3300">
               <caret line="150" column="51" selection-start-line="150" selection-start-column="51" selection-end-line="150" selection-end-column="51" />
               <folding>
                 <element signature="n#style#0;n#el-table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -49,34 +49,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="interface-form.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/interface-form.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3117" />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="interface-list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/interface-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
+            <state relative-caret-position="2970">
               <caret line="135" column="53" selection-start-line="135" selection-start-column="53" selection-end-line="135" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="case-collection.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day12_starrysky/starrysky_front/starrysky_v2/case-collection.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file leaf-file-name="mock.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/day12_starrysky/starrysky_front/mock.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1" selection-start-column="1" selection-end-column="1" />
+            <state relative-caret-position="308">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
               <folding>
-                <element signature="e#0#12#0" expanded="true" />
+                <element signature="e#14#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,7 +73,7 @@
       <file leaf-file-name="case.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/case.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
+            <state relative-caret-position="3124">
               <caret line="142" selection-start-line="142" selection-end-line="164" selection-end-column="20" />
             </state>
           </provider>
@@ -96,6 +84,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Vue Single File Component" />
         <option value="Python Script" />
       </list>
     </option>
@@ -116,7 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/day2/1.py" />
         <option value="$PROJECT_DIR$/day2/2.py" />
         <option value="$PROJECT_DIR$/day2/day2/3.py" />
         <option value="$PROJECT_DIR$/day2/3.py" />
@@ -167,6 +155,7 @@
         <option value="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/case.html" />
         <option value="$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/mjz.html" />
         <option value="$PROJECT_DIR$/day12_starrysky/starrysky_front/mock.py" />
+        <option value="$PROJECT_DIR$/day13/111.vue" />
       </list>
     </option>
   </component>
@@ -179,9 +168,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="751" />
-    <option name="y" value="155" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="940" />
+    <option name="y" value="410" />
     <option name="width" value="1183" />
     <option name="height" value="884" />
   </component>
@@ -190,6 +179,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -197,29 +187,10 @@
               <item name="python_sted" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_sted" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="python_sted" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_sted" type="462c0819:PsiDirectoryNode" />
-              <item name="day12_starrysky" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_sted" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_sted" type="462c0819:PsiDirectoryNode" />
-              <item name="day12_starrysky" type="462c0819:PsiDirectoryNode" />
-              <item name="starrysky_front" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_sted" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_sted" type="462c0819:PsiDirectoryNode" />
-              <item name="day12_starrysky" type="462c0819:PsiDirectoryNode" />
-              <item name="starrysky_front" type="462c0819:PsiDirectoryNode" />
-              <item name="starrysky_v2" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -253,7 +224,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mock (1)">
+  <component name="RunManager" selected="Django server.day13">
+    <configuration name="写日志" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python sted" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day6" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day6/写日志.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python sted" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -287,25 +277,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day9/1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="写日志" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python sted" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day6" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day6/写日志.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -406,18 +377,39 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="day13" type="Python.DjangoServer" factoryName="Django server">
+      <module name="day13" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+    </configuration>
     <list>
       <item itemvalue="Python.a" />
+      <item itemvalue="Python.run" />
+      <item itemvalue="Python.写日志" />
       <item itemvalue="Python.1" />
       <item itemvalue="Python.send_message" />
       <item itemvalue="Python.1 (1)" />
-      <item itemvalue="Python.mock" />
-      <item itemvalue="Python.mock (1)" />
+      <item itemvalue="Django server.day13" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.mock (1)" />
-        <item itemvalue="Python.mock" />
         <item itemvalue="Python.1" />
         <item itemvalue="Python.1 (1)" />
         <item itemvalue="Python.send_message" />
@@ -446,22 +438,22 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26760563" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26760563" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15724947" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32936078" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16311301" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -484,13 +476,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/day7/继承.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day7/面向对象3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1122">
@@ -773,14 +758,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/case.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
+        <state relative-caret-position="3124">
           <caret line="142" selection-start-line="142" selection-end-line="164" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky_v2/mjz.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1011">
+        <state relative-caret-position="3300">
           <caret line="150" column="51" selection-start-line="150" selection-start-column="51" selection-end-line="150" selection-end-column="51" />
           <folding>
             <element signature="n#style#0;n#el-table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -789,27 +774,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/interface-form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3117" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day11_starrysky/starrysky_front/starrysky/interface-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
+        <state relative-caret-position="2970">
           <caret line="135" column="53" selection-start-line="135" selection-start-column="53" selection-end-line="135" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day12_starrysky/starrysky_front/starrysky_v2/case-collection.html">
+    <entry file="file://$PROJECT_DIR$/day13/111.vue" />
+    <entry file="file://$PROJECT_DIR$/day13/day13/settings.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day13/day13/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6" />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/day12_starrysky/starrysky_front/mock.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        <state relative-caret-position="308">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#14#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

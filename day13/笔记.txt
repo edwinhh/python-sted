@@ -1,0 +1,96 @@
+自动化的内容：
+
+
+测试开发：
+    开发测试工具：
+        目的：为了提高你的
+            1、测试效率
+            2、提升测试质量
+            3、找出你测试中的痛点、浪费时间的地方
+        1、前端：
+            html、css、js
+            vue.js
+            elementui
+        2、后端：
+            服务端
+                django:
+                    python服务端开发框架
+                    django-admin startapp project_name #创建项目
+                    cd project_name
+                    python manager.py startapp user
+                    python manager.py startapp order
+
+
+
+                flask:
+                    127.0.0.1:9000/login?username=xxx&password=xxx
+
+
+
+1、
+	pip install django==2.2
+
+	django-admin  startproject blog
+	cd blog
+	python manage.py startapp user
+	python manage.py startapp order
+
+	python manage.py runserver
+
+	python manage.py makemigrations #生成表结构
+	python manage.py migrate #同步到数据库
+
+	python manage.py createsuperuser #创建后台管理用户
+1、前后端分离式
+
+2、前后端不分离的
+
+MVC  -》web开发模式
+ model   ->数据库
+ view    ->视图
+ controller  ->控制逻辑
+
+MTV ->
+	model ->数据库
+	template   ->视图
+	view  ->逻辑
+
+1、表结构
+	category
+		id
+		name
+		create_time
+		update_time
+
+	article
+		id
+		title
+		desc
+		content
+		img
+		recommend
+		category_id
+		create_time
+		update_time
+
+	firend_url
+		id
+		name
+		url
+
+	site
+		title
+		desc
+		img
+
+
+
+
+
+
+
+
+
+
+
+

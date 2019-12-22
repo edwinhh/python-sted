@@ -2,6 +2,7 @@
 import flask
 from flask_cors import CORS
 
+
 server = flask.Flask(__name__)
 CORS(server, supports_credentials=True)
 

@@ -4,7 +4,6 @@ import json,requests,jsonpath
 import tools,time,os
 
 
-
 #第一道题
 def qq_check(qq):
     url="https://qun.qq.com/cgi-bin/qun_mgr/search_group_members"
