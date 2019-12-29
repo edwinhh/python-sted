@@ -1,0 +1,61 @@
+上周回顾：
+    1、django基础知识
+        1、django web开发框架、服务端
+        2、为了开发测试工具：
+            1、测试中的痛点、比较复杂的东西
+        3、django==2.15
+
+
+        创建项目
+            django-admin startproject django_test
+            cd django_test
+            python manage.py startapp user
+            python manage.py startapp order
+
+            python manage.py makemigrations
+            python manage.py migrate
+
+            python manage.py runserver 0:8111
+
+
+        orm
+            增删改查
+            insert 语句
+
+            u = User(username=xxx,password=xxx)
+            u.save()
+
+            u = User.objects.create(username=xxx,password=xxx)
+
+            #修改
+            User.objects.all().update(is_delete=True)
+            User.objects.filter(xxx=xx).update(is_delete=True)
+
+            u = user.objects.get(id=1)
+            u.username = xxx;
+            u.save()
+
+            删除：
+            u = user.objects.get(id=1)
+            u.delete()
+             User.objects.all().delete()
+
+
+本周内容：
+    1、上下文管理器
+        1、每个view里面都需要用到的操作，那你就放到上下文管理器里面查
+        2、先定义一个函数，函数必须有一个参数，是request
+        3、这个函数要返回一个字典
+        4、要加在配置文件里面 TEMPLATES=>options=>
+
+    2、多对多关联
+    3、分页
+
+    4、丰富django admin
+    5、form
+    6、simpletag
+
+
+
+
+
