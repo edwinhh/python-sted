@@ -1,0 +1,55 @@
+{% load my_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/static/style.css" rel="stylesheet">
+</head>
+<body>
+    欢迎《{{name}}》登录,今天是 === {{time}} ===
+
+
+    {{ stus.0 }}
+    <br>
+    {{ stus |length  }}
+    <br>
+    {{ stus |slice:"0:2"  }}
+    <br>
+    {{ stus |join:"-"  }}
+    <br>
+    {{ name |default:"admin"  }}
+    <br>
+    {{ cur_time |date:"Y-m-d H:i:s"  }}
+    <br>
+    {{ h1_str |safe  }}
+{#    #xss注入#}
+    <br>
+    {{ h1_str   }}
+    <br>
+    {{ words | truncatechars:20   }}
+    <br>
+    {{ age | add:2   }}
+    <br>
+    {{ name | add:"先生"   }}
+    <br>
+    {{ english_name | upper   }}
+    <br>
+    {{ english_name | lower   }}
+    <br>
+    {{ article_content|mingan }}
+    <br>
+    {{ article_content|mingan2:"金正恩" }}
+    <br>
+    {% mingan3 say "213" "sb" "傻x" %}
+
+
+{#    <ul>#}
+{#        {% for stu in stus %}#}
+{#        <li>{{stu}}</li>#}
+{#        {% endfor%}#}
+{#    </ul>#}
+
+
+</body>
+</html>

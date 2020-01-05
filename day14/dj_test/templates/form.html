@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/add_article/" method="post">
+    {% csrf_token %}
+    title：<input name="title" type="text">
+    desc：<input name="desc">
+    content： <input name="content">
+    <!--category：<input name="category">-->
+    <select name="category">
+        {% for a in categories%}
+        <option value="{{a.id}}">{{a.name}}</option>
+        {% endfor%}
+    </select>
+    <input type="submit" value="提交">
+
+</form>
+</body>
+</html>
