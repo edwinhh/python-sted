@@ -1,0 +1,31 @@
+上周回顾：
+    1、cvb 类
+       fvb 函数
+    2、form
+        用来校验请求数据的
+        Form
+            登录
+                username
+                password
+                verify_code
+        ModelForm
+            class ProjectForm(form.ModelForm):
+                class Meta:
+                    model = models.Project
+
+            form.is_valid() 是否通过
+            data = form.cleaned_data
+    3、前后端不分离的开发
+        1、分页
+
+
+        只写接口
+            views 返回的时候
+            添加项目
+            project
+             id
+             name
+             desc
+             xx
+
+?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTU3ODgyMDYwNSwiZXhwIjoxNTc4ODIxMTA1fQ.eyJ1c2VyX2lkIjoxLCJwaG9uZSI6MTg2MTI1MzI5NDV9.nEg8-3xx8ggQjG0ZbWwflhgYnGeyXr7k04GtTHuK5bI
