@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>接口管理</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../layuiadmin/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../layuiadmin/style/admin.css" media="all">
+    <style>
+        .c1 {
+            width: 90%;
+            display: inline-block;
+            margin-left: 10px;
+            text-align: left;
+        }
+
+        .c2 {
+            margin-top: 5px;
+        }
+
+        .c4 {
+            vertical-align: top;
+            width: 7%;
+            display: inline-block;
+            text-align: left;
+            color: #999999;
+        }
+    </style>
+</head>
+<body>
+
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-md12">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <div class="layui-form">
+
+                        <div class="test-table-reload-btn" style="margin-bottom: 10px;">
+                            <div class="layui-inline">
+                                <input class="layui-input" placeholder="请输入关键字搜索" name="search" id="search"
+                                       autocomplete="on">
+                            </div>
+
+                            <div class="layui-inline">
+                                <select name="project" id="project">
+                                    <option value="">请选择项目</option>
+                                </select>
+                            </div>
+
+                            <button class="layui-btn" data-type="reload" style="margin-left: 10px">搜索</button>
+                        </div>
+                    </div>
+
+
+                    <table class="layui-hide" id="test-table-reload" lay-filter="test-table-reload">
+                    </table>
+
+                    <script type="text/html" id="zhedie">
+                        <i class="layui-icon layui-icon-right"  lay-event="collapse"></i>  <!-- 折叠箭头-->
+                    </script>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../layuiadmin/layui/layui.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/utils.js">
+
+</script>
+<script>
+    layui.config({
+        base: '../layuiadmin/' //静态资源所在路径
+    }).extend({
+        index: 'lib/index' //主入口模块
+    }).use(['index', 'table', 'form', 'element'], function () {
+        var table = layui.table;
+        var $ = layui.$;
+
+        get_projects(add_project); //调用获取项目的函数，然后传入一个回调函数，填充下拉菜单
+
+        var case_collection_id = getQueryVariable('case_collection_id'); //如果是从用例集合页面进来的，就可以获取到case_collection_id
+        var report_batch = getQueryVariable('report_batch'); //如果是从用例集合页面进来的，就可以获取到case_collection_id
+
+
+        //渲染table
+        table.render({
+            elem: '#test-table-reload'
+            , url: host + '/api/report',
+            skin: 'nob',
+            headers: {"token": get_token()},
+            where : {"case_collection":case_collection_id,'batch':report_batch}
+            , cols: [[
+                {field: "#", templet: '#zhedie', width: 50},
+                {field: 'title', title: '用例名称'},
+                {field: 'project_name', title: '归属项目',templet: function (d) {
+                        return    `<button type="button" class="layui-btn layui-btn-sm layui-btn-normal">${d.project_name}</button>`
+                    }},
+                {field: 'case_collection', title: '用例集合',templet: function (d) {
+                        //判断返回的状态是什么，然后返回什么html
+                        //     https://www.layui.com/doc/modules/table.html  ，里面的 函数转义
+
+                        if (d.case_collection == null) {
+                            return '单个用例'
+                        }
+                        return d.case_collection
+                    }},
+                {field: 'status', title: '状态',templet: function (d) {
+                        //判断返回的状态是什么，然后返回什么html
+                        //     https://www.layui.com/doc/modules/table.html  ，里面的 函数转义
+
+                        if (d.status == '1') {
+                            return '<button type="button" class="layui-btn layui-btn-sm">通过</button>'
+                        } else if (d.status == '999') {
+                            return '<button type="button" class="layui-btn layui-btn-sm layui-btn-danger">失败</button>'
+                        }
+                    }   },
+                {field: 'duration', title: '运行时长',templet: function (d) {
+                    return    `<button type="button" class="layui-btn layui-btn-sm layui-btn-warm">${d.duration} ms</button>`
+                    }},
+                {field: 'run_user', title: '运行用户'},
+                {field: 'run_time', title: '运行时间',templet: function (d) {
+                        return    `<button type="button" class="layui-btn layui-btn-sm layui-btn-danger">${d.run_time}</button>`
+                    }, sort: true},
+            ]]
+            , page: true,
+            limits: [20, 50, 100, 200, 500],
+            limit: 20,
+        });
+
+        table.on('tool(test-table-reload)', function (obj) {
+            if (obj.event === 'collapse') {
+                let s = $(this).attr('class');
+                if (s.indexOf('layui-icon-right') !== -1) {
+                    $(this).removeClass('layui-icon-right')
+                    $(this).addClass('layui-icon-down')
+                    obj.tr.after(`<td colspan="6"><div class="collapse_div${obj.data.id}" style="margin-left: 10px;width: 1100px"><div class="c2"><span class="c4">url</span><div class="c1">${obj.data.url}</div></div><div class="c2"><span class="c4">请求方式</span><div class="c1">${obj.data.method}</div></div><div class="c2"><span class="c4">请求参数</span><div class="c1">${obj.data.params}</div></div><div class="c2"><span class="c4">检查点</span><div class="c1">${obj.data.check}</div></div> <div class="c2"><span class="c4">失败原因</span><div class="c1">${obj.data.reason}</div></div><div class="c2"><span class="c4">返回参数</span><div class="c1" >${obj.data.response}</div></div> </div></td>`)
+
+                } else {
+                    $(this).removeClass('layui-icon-down')
+                    $(this).addClass('layui-icon-right')
+                    $(`.collapse_div${obj.data.id}`).css('display', 'none')
+
+                }
+
+
+            }
+        });
+
+        var $ = layui.$, active = {
+            reload: function () {
+                var search = $('#search');
+                var project = $('#project');
+                //执行重载
+                table.reload('test-table-reload', {
+                    page: {
+                        curr: 1 //重新从第 1 页开始
+                    }
+                    , where: {
+                        search: search.val(),
+                        project: project.val()
+                    }
+                });
+            }
+
+        };
+        $('.test-table-reload-btn .layui-btn').on('click', function () {
+            var type = $(this).data('type');
+            active[type] ? active[type].call(this) : '';
+        });
+
+    });
+</script>
+</body>
+</html>

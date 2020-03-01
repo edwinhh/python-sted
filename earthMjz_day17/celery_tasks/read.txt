@@ -1,0 +1,4 @@
+windows
+#pip install Celery
+# pip install eventlet
+# celery -A celery_tasks.main worker -l info -P eventlet

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">-->
+    <link rel="stylesheet" href="../js/index.css">
+    <style>
+        .text {
+            font-size: 14px;
+        }
+
+        .item {
+            margin-bottom: 18px;
+        }
+
+        .box-card {
+            width: 100%;
+        }
+
+    </style>
+    <style>
+        .demo-table-expand {
+            font-size: 0;
+        }
+
+        .demo-table-expand label {
+            width: 90px;
+            color: #99a9bf;
+        }
+
+        .demo-table-expand .el-form-item {
+            margin-right: 0;
+            margin-bottom: 0;
+            width: 50%;
+        }
+
+        .el-form-item div {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <div id="bar">
+        <!--搜索、筛选-->
+        <el-form :inline="true" class="demo-form-inline">
+            <el-form-item>
+                <el-input placeholder="搜索" v-model="filter_query.search"></el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" @click="search">查询</el-button>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" @click="add_collection">添加</el-button>
+            </el-form-item>
+        </el-form>
+    </div>
+    <div id="table">
+        <el-table
+                ref="multipleTable"
+                :data="tableData"
+                tooltip-effect="dark"
+                style="width: 100%"
+                v-loading="loading" element-loading-text="玩命加载中...">
+            <el-table-column
+                    prop="id"
+                    label="ID">
+            </el-table-column>
+            <el-table-column
+                    prop="name"
+                    label="参数名称">
+            </el-table-column>
+            <el-table-column
+                    prop="desc"
+                    label="描述"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column
+                    prop="value"
+                    label="参数值"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column label="操作">
+                <template slot-scope="scope">
+                    <el-button
+                            size="mini"
+                            @click="handle_edit(scope.row)">编辑
+                    </el-button>
+                    <el-button
+                            size="mini"
+                            type="danger"
+                            @click="handle_delete(scope.row)">删除
+                    </el-button>
+                </template>
+            </el-table-column>
+        </el-table>
+
+
+    </div>
+    <div id="edit">
+        <el-dialog :title="dialog_title" :visible.sync="dialogFormVisible" v-loading="loading"
+                   element-loading-text="玩命加载中...">
+
+            <el-form :model="form">
+
+                <el-form-item label="参数名称" :label-width="formLabelWidth">
+                    <el-input v-model="form.name" style="width: 50%" placeholder="请输入参数名称"></el-input>
+                </el-form-item>
+                <el-form-item label="描述" :label-width="formLabelWidth">
+                    <el-input type="textarea" v-model="form.desc" style="width: 50%" placeholder="请输入参数描述"></el-input>
+
+                </el-form-item>
+                <el-form-item label="参数值" :label-width="formLabelWidth">
+                    <el-input v-model="form.value" style="width: 50%" placeholder="请输入参数值"></el-input>
+                </el-form-item>
+
+
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+                <el-button @click="dialogFormVisible = false">取 消</el-button>
+                <el-button type="primary" @click="operate" :loading="button_loading">确 定</el-button>
+            </div>
+        </el-dialog>
+    </div>
+    <div id="pagination">
+        <el-pagination
+                @size-change="handleSizeChange"
+                @current-change="handleCurrentChange"
+                :current-page="currentPage"
+                :page-sizes="[10, 20, 50, 100]"
+                :page-size="filter_query.limit"
+                layout="total, sizes, prev, pager, next, jumper"
+                :total="total">
+        </el-pagination>
+    </div>
+</div>
+
+<!-- import Vue before Element -->
+<!--<script src="https://unpkg.com/vue/dist/vue.js"></script>-->
+<script src="../js/vue.js"></script>
+<!-- import JavaScript -->
+<!--<script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+<script src="../js/index.js"></script>
+<!--<script src="https://cdn.bootcss.com/axios/0.19.0/axios.min.js"></script>-->
+<script src="../js/axios.min.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/utils.js"></script>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            currentPage: 1,
+            total: 0,
+            filter_query: {
+                search: undefined,
+                limit: 10,
+                page: 1
+            },
+            tableData: [],
+            dialogFormVisible: false,
+            dialog_title: '添加',
+            form: {
+                name: '',
+                value: '',
+                desc: '',
+            },
+            formLabelWidth: '120px',
+            value: [],
+            loading: false,
+            button_loading: false,
+            id: undefined,
+        },
+        mounted: function () {
+            this.get_page_data();
+        },
+        methods: {
+            handleSizeChange(val) {
+                this.filter_query.limit = val;
+                this.filter_query.page = 1;
+                this.get_page_data();
+            },
+            handleCurrentChange(val) {
+                this.filter_query.page = val;
+                this.get_page_data();
+            },
+            data_to_string(data) {
+                let tmp = new FormData();
+                for (var key in data) {
+                    tmp.append(key, data[key])
+                }
+                return tmp
+            },
+            get_page_data: function () {
+                this.loading = true; //
+                axios({
+                    method: 'get',
+                    url: host + '/api/parameter',
+                    params: this.filter_query,
+                    headers: {'token': get_token()}
+                }).then((response) => {
+                    this.tableData = response.data.data;
+                    this.total = response.data.count;
+                    this.loading = false; //
+                })
+            },
+            search: function () {
+                this.filter_query.page = 1;
+                this.get_page_data()
+            },
+            handle_edit(row) {
+                this.form = Object.assign({}, {name: row.name, value: row.value, desc: row.desc}); //深拷贝
+                this.form.id = row.id;
+                this.dialog_title = "编辑";
+                this.dialogFormVisible = true //打开模态框
+            },
+            handle_delete(row) {
+                this.$confirm('确认删除当前参数吗？', '提示', {
+                    confirmButtonText: '确定',
+                    cancelButtonText: '取消',
+                    type: 'warning'
+                }).then(() => {
+                    axios({
+                        method: 'delete',
+                        url: host + '/api/parameter?id=' + row.id,
+                        headers:{token:get_token()}
+                    }).then((response) => {
+                        if (response.data.code == 0) {
+                            this.$message({
+                                type: 'success',
+                                message: '删除成功'
+                            });
+                            this.get_page_data();
+                        }else {
+                            this.$message({
+                            type: 'error',
+                            message: response.data.msg
+                        });
+                        }
+                    }).catch((error) => {
+                        this.$message({
+                            type: 'error',
+                            message: error
+                        });
+                    })
+
+                }).catch(() => {
+                    this.$message({
+                        type: 'info',
+                        message: '取消删除'
+                    });
+                })
+
+            },
+            add_collection() {
+                this.reset_form();
+                this.dialog_title = "添加";
+                this.dialogFormVisible = true
+            },
+            reset_form() {
+                //form数据置为空
+                this.form = {
+                    name: '',
+                    desc: '',
+                    value: '',
+                }
+            },
+            operate() {
+                this.button_loading = true;
+                if (this.dialog_title == '添加') {
+                    var method = 'post';
+                    var url = host + '/api/parameter';
+                } else if (this.dialog_title == '编辑') {
+                    var method = 'put';
+                    var url = host + '/api/parameter?id=' + this.form.id;
+                }
+                axios({
+                    method: method,
+                    url: url,
+                    data: this.data_to_string(this.form),
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        'token': get_token()
+                    }
+                }).then((response) => {
+                    this.button_loading = false;
+                    if (response.data.code == 0) {
+                        this.dialogFormVisible = false; //关闭模态框
+                        this.get_page_data();
+                    } else {
+                        this.$message({
+                            type: 'error',
+                            message: response.data.msg
+                        })
+                    }
+                }).catch((error) => {
+                    this.button_loading = false;
+                    this.$message({
+                        type: 'error',
+                        message: error
+                    });
+                })
+
+            },
+        },
+    })
+</script>
+</body>
+</html>

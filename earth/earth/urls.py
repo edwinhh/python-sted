@@ -17,8 +17,10 @@ from django.contrib import admin
 from django.urls import path,include
 
 from example import urls
+from sksystem import urls as sysUrls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('example/', include(urls)),#例子url，访问的时候就是/example/book
+    path('api/',include(sysUrls))
 ]

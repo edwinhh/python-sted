@@ -1,0 +1,23 @@
+vue
+
+    <div id="app">
+        {{num|change(name)}}
+    </div>
+
+    new Vue({
+        el:'#app',
+        methods:{
+
+        },
+        data:{
+            num:0
+        },
+        filters:{
+            change:func(num,name){
+
+            }
+        },
+        created:fucn(){
+
+        }
+    })

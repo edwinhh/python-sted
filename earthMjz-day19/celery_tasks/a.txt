@@ -1,0 +1,19 @@
+ 
+ -------------- celery@Beyond v4.4.0 (cliffs)
+--- ***** ----- 
+-- ******* ---- Windows-10-10.0.18362-SP0 2020-02-23 18:40:57
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         tasks:0x3ed76d0
+- ** ---------- .> transport:   redis://127.0.0.1:6379/4
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . tasks.add
+

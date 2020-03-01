@@ -11,12 +11,12 @@ mysql_info  = {
 
 email_info = {
     'host':'lsmtp.sf-express.com',
-    'user':'HAOHE@sfmail.sf-express.com',
+    'user':'***',
     'password':'***'
 }
 
-email_to = ['haohe@sfmail.sf-express.com']
-email_cc = ['haohe@sfmail.sf-express.com']
+email_to = ['***']
+email_cc = ['***']
 
 base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 log_path = os.path.join(base_path,'logs','utp.log')

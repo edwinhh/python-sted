@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'utils.middlewares.PutMiddleware',
-     'utils.middlewares.TokenMiddleware',
+     #'utils.middlewares.TokenMiddleware',
 ]
 
 ROOT_URLCONF = 'dj_test.urls'
@@ -132,11 +132,11 @@ CACHES = {
     },
     "redis2": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://127.0.0.1:6379/1",
+        "LOCATION": "redis://118.24.3.40:6379/1",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
             "CONNECTION_POOL_KWARGS": {"max_connections": 100, 'decode_responses': True},
-            "PASSWORD": "123456",  # 密码
+            "PASSWORD": "HK139bc&*",  # 密码
         }
     }
 }  # redis配置

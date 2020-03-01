@@ -13,4 +13,7 @@ urlpatterns = [
 
     path("login",view3.LoginView.as_view())
 
+
+
+
 ]

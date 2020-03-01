@@ -2,16 +2,323 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b50b9855-5f9b-40e4-8803-6678e8200ad1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../../day16/dj_test/.idea/dj_test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../day16/dj_test/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../day16/dj_test/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../day16/dj_test/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../day16/dj_test/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../day16/dj_test/utils/custom_response.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../day16/dj_test/utils/middleware.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earth/sksystem/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/celery_tasks/read.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/celery_tasks/tasks/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/celery_tasks/tasks/tasks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/doWork.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/.idea/starrysky.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/README.en.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/Index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/app/content/comment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/app/content/contform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/app/content/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/app/content/listform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/app/content/tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/app/content/tagsform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/app/forum/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/app/forum/listform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/app/forum/replys.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/app/forum/replysform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/app/message/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/app/workorder/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/app/workorder/listform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/anim/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/auxiliar/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/badge/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/button/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/carousel/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/code/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/flow/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/form/element.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/form/group.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/grid/all.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/grid/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/grid/mobile-pc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/grid/mobile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/grid/speed-dial.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/grid/stack.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/laydate/demo1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/laydate/demo2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/laydate/special-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/laydate/theme.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/layer/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/layer/special-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/layer/theme.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/laypage/demo1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/laypage/demo2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/nav/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/panel/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/progress/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/rate/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/table/auto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/table/cellEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/table/cellEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/table/checkbox.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/table/data.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/table/fixed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/table/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/table/height.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/table/initSort.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/table/operate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/table/operate_bak.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/table/page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/table/reload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/table/resetPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/table/simple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/table/static.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/table/style.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/table/thead.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/table/tostatic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/tabs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/timeline/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/upload/demo1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/upload/demo2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/component/util/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/demo/table/user/data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/home/console.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/home/homepage1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/home/homepage2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/js/axios.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/js/case_main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/js/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/js/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/js/qrcode.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/js/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/json_viewer.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/json/console/prograss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/json/console/top-card.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/json/console/top-search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/json/content/comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/json/content/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/json/content/tags.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/json/forum/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/json/forum/replys.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/json/message/all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/json/message/direct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/json/message/notice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/json/table/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/json/table/demo2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/json/table/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/json/table/user30.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/json/useradmin/mangadmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/json/useradmin/role.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/json/useradmin/webuser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/json/workorder/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/font/iconfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/images/face/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/lay/modules/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/lay/modules/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/lay/modules/colorpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/lay/modules/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/lay/modules/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/lay/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/lay/modules/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/lay/modules/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/lay/modules/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/lay/modules/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/lay/modules/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/lay/modules/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/lay/modules/rate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/lay/modules/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/lay/modules/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/lay/modules/transfer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/lay/modules/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/lay/modules/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/lay/modules/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/layui/layui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/modules/case_main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/modules/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/modules/console.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/modules/contlist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/modules/forum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/modules/message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/modules/prograss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/modules/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/modules/senior.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/modules/set.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/modules/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/modules/useradmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/modules/workorder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/style/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/style/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/style/res/layui-logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/style/res/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/style/res/logo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/style/res/template/character.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/style/res/template/huge.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/style/res/template/portrait.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/style/template.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/tpl/system/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/layuiadmin/tpl/system/theme.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/mock.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/senior/echarts/bar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/senior/echarts/line.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/senior/echarts/map.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/set/system/email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/set/system/website.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/set/user/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/set/user/password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky/case-collection-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky/case-collection-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky/case-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky/case-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky/case_collection_report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky/dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky/interface-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky/interface-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky/join_case.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky/parameter-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky/parameter-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky/project-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky/project-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky/qr_code.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky/report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky/single_report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky_v2/case-collection.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky_v2/case.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky_v2/interface.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky_v2/parameter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky_v2/project.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/starrysky_v2/report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/study/case.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/study/mjz.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/study/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/study/笔记" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/template/addresslist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/template/goodslist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/template/msgboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/template/personalpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/template/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/template/tips/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/template/tips/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/user/administrators/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/user/administrators/role.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/user/forget.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/user/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/user/reg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/user/user/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/views/app/content/contform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/views/app/content/listform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/views/app/content/tagsform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/views/app/forum/listform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/views/app/forum/replysform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/views/app/workorder/listform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/views/user/administrators/adminform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/views/user/administrators/roleform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/views/user/user/userform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/服务端接口文档地址.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/starrysky_front/笔记.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/python_sted.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/python_sted.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day16/dj_test/dj_test/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../day16/dj_test/dj_test/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day16/dj_test/testcase/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../day16/dj_test/testcase/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day9/utp/config/setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../day9/utp/config/setting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../earth/earth/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../earth/earth/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../earth/earth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../earth/earth/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../earth/example/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../earth/example/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,105 +328,104 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/dj_test$doWork.coverage" NAME="doWork Coverage Results" MODIFIED="1582453041885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../earthMjz" />
     <SUITE FILE_PATH="coverage/dj_test$manage.coverage" NAME="manage Coverage Results" MODIFIED="1578796233042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dj_test$models_test__2_.coverage" NAME="models_test (2) Coverage Results" MODIFIED="1581847741030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../earthMjz_new/sksystem" />
     <SUITE FILE_PATH="coverage/dj_test$temp.coverage" NAME="temp Coverage Results" MODIFIED="1578213469759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../tools" />
+    <SUITE FILE_PATH="coverage/dj_test$models_test__1_.coverage" NAME="models_test (1) Coverage Results" MODIFIED="1581845800419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../earthMjz_bak/sksystem" />
+    <SUITE FILE_PATH="coverage/dj_test$do.coverage" NAME="do Coverage Results" MODIFIED="1582450759764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../earthMjz/celery_tasks/run" />
+    <SUITE FILE_PATH="coverage/dj_test$models_test.coverage" NAME="models_test Coverage Results" MODIFIED="1581847463145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../earthMjz/sksystem" />
+    <SUITE FILE_PATH="coverage/dj_test$run.coverage" NAME="run Coverage Results" MODIFIED="1582449118663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../earthMjz/celery_tasks" />
+    <SUITE FILE_PATH="coverage/dj_test$main.coverage" NAME="main Coverage Results" MODIFIED="1582448365197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../earthMjz/celery_tasks" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="model1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../day16/dj_test/model1.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="const.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../day16/dj_test/utils/const.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="custom_response.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../day16/dj_test/utils/custom_response.py">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../earthMjz/earth/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="395">
+              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom_view.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../day16/dj_test/utils/custom_view.py">
+      <file leaf-file-name="tasks.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../earthMjz/celery_tasks/tasks/tasks.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../earthMjz/celery_tasks/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2065">
+            <state relative-caret-position="220">
+              <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
               <folding>
-                <element signature="e#0#30#0" expanded="true" />
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="req.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../day16/dj_test/req.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../day16/dj_test/testcase/utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="middleware.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../day16/dj_test/utils/middleware.py">
+      <file leaf-file-name="read.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../earthMjz/celery_tasks/read.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="66">
-              <caret line="3" column="19" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="19" />
+              <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../earthMjz/celery_tasks/run/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../earthMjz/celery_tasks/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasks.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../earthMjz/celery_tasks/run/tasks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
               <folding>
-                <element signature="e#0#33#0" expanded="true" />
+                <element signature="e#19#63#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tools.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../day16/dj_test/utils/tools.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-547">
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="middlewares.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../day16/dj_test/utils/middlewares.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../day16/dj_test/testcase/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+      <file leaf-file-name="a.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../earthMjz/celery_tasks/a.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -130,6 +436,23 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>CasePremise</find>
+      <find>BookAddView</find>
+      <find>User</find>
+      <find>case</find>
+      <find>haohe</find>
+      <find>haohe@sfmail.sf-express.com</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>***</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\python_sted</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -142,15 +465,39 @@
         <option value="$PROJECT_DIR$/dj_test/urls.py" />
         <option value="$PROJECT_DIR$/../../day15/dj_test/dj_test/urls.py" />
         <option value="$PROJECT_DIR$/../../day16/dj_test/dj_test/urls.py" />
-        <option value="$PROJECT_DIR$/../../day16/dj_test/testcase/urls.py" />
         <option value="$PROJECT_DIR$/../../day16/dj_test/testcase/views.py" />
         <option value="$PROJECT_DIR$/../../day16/dj_test/utils/middleware.py" />
         <option value="$PROJECT_DIR$/../../day16/dj_test/utils/custom_response.py" />
         <option value="$PROJECT_DIR$/../../day16/dj_test/testcase/views_new.py" />
-        <option value="$PROJECT_DIR$/../../earth/earth/settings.py" />
-        <option value="$PROJECT_DIR$/../../day16/dj_test/dj_test/settings.py" />
         <option value="$PROJECT_DIR$/../../day16/笔记.txt" />
         <option value="$PROJECT_DIR$/../../day16/dj_test/utils/middlewares.py" />
+        <option value="$PROJECT_DIR$/../../day16/dj_test/testcase/urls.py" />
+        <option value="$PROJECT_DIR$/../../day16/dj_test/dj_test/settings.py" />
+        <option value="$PROJECT_DIR$/../../earth/sksystem/urls.py" />
+        <option value="$PROJECT_DIR$/../../earth/earth/urls.py" />
+        <option value="$PROJECT_DIR$/../../earth/earth/settings.py" />
+        <option value="$PROJECT_DIR$/../../earth/example/models.py" />
+        <option value="$PROJECT_DIR$/../../earthMjz/sksystem/views.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/cc1bec64-2da8-4bc7-962e-a9529a7f91be/console_1.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/cc1bec64-2da8-4bc7-962e-a9529a7f91be/console_2.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/cc1bec64-2da8-4bc7-962e-a9529a7f91be/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/222c0b7f-4396-4a43-beae-756cacccf57f/console.sql" />
+        <option value="$PROJECT_DIR$/../../earthMjz/sksystem/urls.py" />
+        <option value="$PROJECT_DIR$/../../day9/utp/config/setting.py" />
+        <option value="$PROJECT_DIR$/../../earthMjz/sksystem/models.py" />
+        <option value="$PROJECT_DIR$/../../earthMjz/earth/middlerwares.py" />
+        <option value="$PROJECT_DIR$/../../earthMjz/sksystem/models_test.py" />
+        <option value="$PROJECT_DIR$/../../earthMjz_new/sksystem/models_test.py" />
+        <option value="$PROJECT_DIR$/../../earthMjz/celery_tasks/run.py" />
+        <option value="$PROJECT_DIR$/../../earthMjz/celery_tasks/config.py" />
+        <option value="$PROJECT_DIR$/../../earthMjz/celery_tasks/run/test.py" />
+        <option value="$PROJECT_DIR$/../../earthMjz/celery_tasks/run/do.py" />
+        <option value="$PROJECT_DIR$/../../earthMjz/doWork.py" />
+        <option value="$PROJECT_DIR$/../../earthMjz/earth/settings.py" />
+        <option value="$PROJECT_DIR$/../../earthMjz_day17/sksystem/starrysky/starrysky_front/Index.html" />
+        <option value="$PROJECT_DIR$/../../earthMjz/celery_tasks/tasks.py" />
+        <option value="$PROJECT_DIR$/../../earthMjz/celery_tasks/main.py" />
+        <option value="$PROJECT_DIR$/../../earthMjz/celery_tasks/tasks/tasks.py" />
       </list>
     </option>
   </component>
@@ -163,11 +510,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1436" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -185,41 +531,74 @@
             <path>
               <item name="dj_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_sted" type="462c0819:PsiDirectoryNode" />
-              <item name="day16" type="462c0819:PsiDirectoryNode" />
+              <item name="earthMjz" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dj_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_sted" type="462c0819:PsiDirectoryNode" />
-              <item name="day16" type="462c0819:PsiDirectoryNode" />
-              <item name="dj_test" type="462c0819:PsiDirectoryNode" />
+              <item name="earthMjz" type="462c0819:PsiDirectoryNode" />
+              <item name="celery_tasks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dj_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_sted" type="462c0819:PsiDirectoryNode" />
-              <item name="day16" type="462c0819:PsiDirectoryNode" />
-              <item name="dj_test" type="462c0819:PsiDirectoryNode" />
-              <item name="dj_test" type="462c0819:PsiDirectoryNode" />
+              <item name="earthMjz" type="462c0819:PsiDirectoryNode" />
+              <item name="celery_tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="tasks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dj_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_sted" type="462c0819:PsiDirectoryNode" />
-              <item name="day16" type="462c0819:PsiDirectoryNode" />
-              <item name="dj_test" type="462c0819:PsiDirectoryNode" />
-              <item name="testcase" type="462c0819:PsiDirectoryNode" />
+              <item name="earthMjz" type="462c0819:PsiDirectoryNode" />
+              <item name="earth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dj_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_sted" type="462c0819:PsiDirectoryNode" />
-              <item name="day16" type="462c0819:PsiDirectoryNode" />
-              <item name="dj_test" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="earthMjz" type="462c0819:PsiDirectoryNode" />
+              <item name="sksystem" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dj_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_sted" type="462c0819:PsiDirectoryNode" />
-              <item name="day16" type="462c0819:PsiDirectoryNode" />
-              <item name="dj_test" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="earthMjz" type="462c0819:PsiDirectoryNode" />
+              <item name="sksystem" type="462c0819:PsiDirectoryNode" />
+              <item name="starrysky" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dj_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_sted" type="462c0819:PsiDirectoryNode" />
+              <item name="earthMjz_day17" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dj_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_sted" type="462c0819:PsiDirectoryNode" />
+              <item name="earthMjz_day17" type="462c0819:PsiDirectoryNode" />
+              <item name="sksystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dj_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_sted" type="462c0819:PsiDirectoryNode" />
+              <item name="earthMjz_day17" type="462c0819:PsiDirectoryNode" />
+              <item name="sksystem" type="462c0819:PsiDirectoryNode" />
+              <item name="starrysky" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dj_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_sted" type="462c0819:PsiDirectoryNode" />
+              <item name="earthMjz_day17" type="462c0819:PsiDirectoryNode" />
+              <item name="sksystem" type="462c0819:PsiDirectoryNode" />
+              <item name="starrysky" type="462c0819:PsiDirectoryNode" />
+              <item name="starrysky_front" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dj_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_sted" type="462c0819:PsiDirectoryNode" />
+              <item name="earthMjz_day17" type="462c0819:PsiDirectoryNode" />
+              <item name="sksystem" type="462c0819:PsiDirectoryNode" />
+              <item name="starrysky" type="462c0819:PsiDirectoryNode" />
+              <item name="starrysky_front" type="462c0819:PsiDirectoryNode" />
+              <item name="starrysky_v2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -230,10 +609,25 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../day16/dj_test" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../earthMjz" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\python_sted\earthMjz\celery_tasks\tasks" />
+      <recent name="D:\python_sted\earthMjz\celery_tasks\run" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\python_sted\earthMjz\sksystem" />
+      <recent name="D:\python_sted\earthMjz\celery_tasks" />
+      <recent name="D:\python_sted\earthMjz_bak\sksystem" />
+      <recent name="D:\python_sted\earthMjz" />
+      <recent name="D:\python_sted\earth\sksystem" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -247,27 +641,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.dj_test">
-    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="dj_test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../day16/dj_test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="temp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.doWork">
+    <configuration name="do" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_sted" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -275,12 +650,107 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../tools" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../earthMjz/celery_tasks/run" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../tools/temp.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../earthMjz/celery_tasks/run/do.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="doWork" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_sted" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../earthMjz" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../earthMjz/doWork.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_sted" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../earthMjz/celery_tasks" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../earthMjz/celery_tasks/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="models_test (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_sted" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../earthMjz_new/sksystem" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../earthMjz_new/sksystem/models_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="models_test" type="PythonConfigurationType" factoryName="Python">
+      <module name="python_sted" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../earthMjz/sksystem" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../earthMjz/sksystem/models_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_sted" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../earthMjz/celery_tasks" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\python_sted\earthMjz\celery_tasks\run\run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -310,14 +780,21 @@
       <option name="customRunCommand" value="" />
     </configuration>
     <list>
+      <item itemvalue="Python.models_test" />
       <item itemvalue="Django server.dj_test" />
-      <item itemvalue="Python.manage" />
-      <item itemvalue="Python.temp" />
+      <item itemvalue="Python.models_test (2)" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.run" />
+      <item itemvalue="Python.do" />
+      <item itemvalue="Python.doWork" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.manage" />
-        <item itemvalue="Python.temp" />
+        <item itemvalue="Python.doWork" />
+        <item itemvalue="Python.do" />
+        <item itemvalue="Python.run" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.models_test (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -345,30 +822,30 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.081023455" side_tool="true" weight="0.936078" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32936078" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3672806" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.34561214" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4989339" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34669557" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.91897655" visible="true" weight="0.29144096" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19083156" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.20682302" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="manage.py@dj_test" order="7" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="manage.py@dj_test" order="7" weight="0.32936078" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.35225955" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,368 +854,316 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testcase/forms.py">
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/sksystem/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-4435" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/example/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../tools/temp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day15/dj_test/dj_test/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day15/dj_test/dj_test/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="24" column="49" lean-forward="true" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
-          <folding>
-            <element signature="e#631#663#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dj_test/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-          <folding>
-            <element signature="e#631#663#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dj_test/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-858" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2687">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../tools/temp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day15/dj_test/dj_test/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day15/dj_test/user/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-528" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day15/testcase/views_new.py" />
-    <entry file="file://$PROJECT_DIR$/testcase/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day15/testcase/urls.py" />
-    <entry file="file://$PROJECT_DIR$/dj_test/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-          <folding>
-            <element signature="e#631#663#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day15/dj_test/dj_test/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-          <folding>
-            <element signature="e#631#663#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/views_new.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1674">
-          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day13/dj_test/user/model_test.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day13/dj_test/user/views.py">
-      <provider selected="true" editor-type-id="text-editor">
+    <entry file="das://222c0b7f-4396-4a43-beae-756cacccf57f/schema/main/table/example_case">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../day13/dj_test/user/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day13/dj_test/user/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day13/笔记.txt">
+    <entry file="das://222c0b7f-4396-4a43-beae-756cacccf57f/schema/main/table/case_collection_case/index/case_collection_case_case_id_b4bad63f">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1122" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day16/dj_test/testcase/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="22">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../day16/dj_test/testcase/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="146" selection-start-line="146" selection-end-line="171" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../earth/earth/middlerwares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../earth/utils/tools.py">
-      <provider selected="true" editor-type-id="text-editor">
+    <entry file="das://222c0b7f-4396-4a43-beae-756cacccf57f/schema/main/table/auth_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../earth/example/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="das://222c0b7f-4396-4a43-beae-756cacccf57f/schema/main/table/auth_user_groups">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://222c0b7f-4396-4a43-beae-756cacccf57f/schema/main/table/eg_book">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://222c0b7f-4396-4a43-beae-756cacccf57f/schema/main/table/eg_author">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://222c0b7f-4396-4a43-beae-756cacccf57f/schema/main/table/report">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/222c0b7f-4396-4a43-beae-756cacccf57f/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://222c0b7f-4396-4a43-beae-756cacccf57f/schema/main/table/project">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../earth/earth/settings.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3146">
+          <caret line="144" column="9" selection-start-line="144" selection-start-column="9" selection-end-line="144" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../day9/utp/config/setting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://222c0b7f-4396-4a43-beae-756cacccf57f/schema/main/table/parameter">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../earth/example/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../earthMjz_bak/sksystem/models_test.py" />
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/earth/middlerwares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://222c0b7f-4396-4a43-beae-756cacccf57f/schema/main/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/sksystem/models_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://222c0b7f-4396-4a43-beae-756cacccf57f/schema/main/table/case_collection">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://222c0b7f-4396-4a43-beae-756cacccf57f/schema/main/table/case_premise">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://222c0b7f-4396-4a43-beae-756cacccf57f/schema/main/table/case_collection_case">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://222c0b7f-4396-4a43-beae-756cacccf57f/schema/main/table/case">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../earthMjz_new/sksystem/models.py" />
+    <entry file="file://$PROJECT_DIR$/../../earthMjz_new/sksystem/models_test.py" />
+    <entry file="file://$PROJECT_DIR$/../../earthMjz_new/sksystem/views.py" />
+    <entry file="file://$PROJECT_DIR$/../../earthMjz_new/sksystem/urls.py" />
+    <entry file="file://$PROJECT_DIR$/../../earthMjz_new/celery_tasks/main.py" />
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/celery_tasks/run/run.py" />
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/example/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-321">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/doWork.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/sksystem/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/sksystem/starrysky/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../earthMjz_day17/sksystem/starrysky/starrysky_front/mock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../earthMjz_day17/sksystem/starrysky/starrysky_front/starrysky_v2/case.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../earthMjz_day17/sksystem/starrysky/starrysky_front/Index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="104" column="44" lean-forward="true" selection-start-line="104" selection-start-column="44" selection-end-line="104" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/sksystem/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/sksystem/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="53" column="47" lean-forward="true" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/earth/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="90" column="17" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/sksystem/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/sksystem/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../day16/dj_test/dj_test/urls.py">
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/earth/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="17" />
-          <folding>
-            <element signature="e#631#663#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="395">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../day16/笔记.txt">
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/celery_tasks/run/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="30" column="31" selection-start-line="30" selection-end-line="30" selection-end-column="162" />
+        <state relative-caret-position="242">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../day16/dj_test/dj_test/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="129" column="25" lean-forward="true" selection-start-line="129" selection-start-column="25" selection-end-line="129" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day16/dj_test/user/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-924">
-          <folding>
-            <element signature="e#0#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day16/dj_test/user/views_new.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day16/dj_test/user/process_content.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day16/dj_test/testcase/views_new.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2492">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day16/dj_test/manage.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day16/dj_test/req.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day16/dj_test/testcase/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day16/dj_test/testcase/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day16/dj_test/utils/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day16/dj_test/model1.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day16/dj_test/utils/const.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day16/dj_test/utils/custom_response.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day16/dj_test/utils/custom_view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2065">
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../day16/dj_test/utils/middleware.py">
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/celery_tasks/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="19" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/celery_tasks/run/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/celery_tasks/run/do.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/celery_tasks/run/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
           <folding>
-            <element signature="e#0#33#0" expanded="true" />
+            <element signature="e#19#63#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../day16/dj_test/utils/tools.py">
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/celery_tasks/a.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/celery_tasks/read.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-547">
+        <state relative-caret-position="66">
+          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/celery_tasks/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../earthMjz/celery_tasks/tasks/tasks.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

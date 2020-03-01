@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <style>
+        .text {
+            font-size: 14px;
+        }
+
+        .item {
+            margin-bottom: 18px;
+        }
+
+        .box-card {
+            width: 100%;
+        }
+
+    </style>
+    <style>
+        .demo-table-expand {
+            font-size: 0;
+        }
+
+        .demo-table-expand label {
+            width: 90px;
+            color: #99a9bf;
+        }
+
+        .demo-table-expand .el-form-item {
+            margin-right: 0;
+            margin-bottom: 0;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <div id="bar">
+        <!--搜索、筛选-->
+        <el-form :inline="true" class="demo-form-inline">
+            <el-form-item>
+                <el-input placeholder="搜索" v-model="filter_query.search"></el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-select placeholder="项目" v-model="filter_query.project">
+                    <el-option v-for="item in projects" :key="item.id" :label="item.name" :value="item.id"></el-option>
+                </el-select>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" @click="search">查询</el-button>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" @click="add_collection">添加</el-button>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" @click="run">运行</el-button>
+            </el-form-item>
+        </el-form>
+    </div>
+    <div id="table">
+        <el-table
+                ref="multipleTable"
+                :data="tableData"
+                tooltip-effect="dark"
+                style="width: 100%"
+                @selection-change="handleSelectionChange" v-loading="loading" element-loading-text="玩命加载中...">
+            <el-table-column
+                    type="selection"
+                    width="55">
+            </el-table-column>
+            <el-table-column
+                    label="集合名称"
+                    width="120">
+                <template slot-scope="scope">
+                    <el-button type="text" @click="handle_edit(scope.$index, scope.row)">{{scope.row.name}}</el-button>
+                </template>
+            </el-table-column>
+            <el-table-column
+                    prop="desc"
+                    label="描述"
+                    width="120">
+            </el-table-column>
+            <el-table-column
+                    prop="project_name"
+                    label="归属项目"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column
+                    prop="case_count"
+                    label="用例数"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column label="测试报告">
+                <template slot-scope="scope">
+                    <el-button
+                            size="mini"
+                            @click="getReport(scope.row)">查看
+                    </el-button>
+                </template>
+            </el-table-column>
+            <el-table-column
+                    prop="user"
+                    label="创建用户"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column
+                    prop="tag"
+                    label="集合状态"
+                    width="120"
+                    filter-placement="bottom-end">
+                <template slot-scope="scope">
+                    <el-tag
+                            :type="scope.row.status == 3 ? 'danger' : 'success'"
+                            disable-transitions>{{scope.row.status|status}}
+                    </el-tag>
+                </template>
+            </el-table-column>
+            <el-table-column
+                    prop="create_time"
+                    label="创建时间"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column label="操作">
+                <template slot-scope="scope">
+                    <el-button
+                            size="mini"
+                            @click="get_join_case(scope.row)">选择用例
+                    </el-button>
+                    <el-button
+                            size="mini"
+                            type="danger"
+                            @click="handle_delete(scope.row)">删除
+                    </el-button>
+                </template>
+            </el-table-column>
+        </el-table>
+
+
+    </div>
+    <div id="edit">
+        <el-dialog :title="dialog_title" :visible.sync="dialogFormVisible" v-loading="loading"
+                   element-loading-text="玩命加载中...">
+            <el-form :model="form">
+                <el-form-item label="集合名称" :label-width="formLabelWidth">
+                    <el-input v-model="form.name" autocomplete="off"></el-input>
+                </el-form-item>
+                <el-form-item label="集合描述" :label-width="formLabelWidth">
+                    <el-input v-model="form.desc" autocomplete="off"></el-input>
+                </el-form-item>
+                <el-form-item label="归属项目" :label-width="formLabelWidth">
+                    <el-select v-model="form.project_id" placeholder="请选择活动区域">
+                        <el-option v-for="item in projects" :key="item.id" :label="item.name"
+                                   :value="item.id"></el-option>
+                    </el-select>
+                </el-form-item>
+
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+                <el-button @click="dialogFormVisible = false">取 消</el-button>
+                <el-button type="primary" @click="operate" :loading="button_loading">确 定</el-button>
+            </div>
+        </el-dialog>
+    </div>
+    <div id="choice_case">
+        <el-dialog title="选择用例" :visible.sync="collectionFormVisible" center>
+            <el-transfer
+                    v-model="value"
+                    :data="case_data"
+                    :titles="['未选择用例', '已选择用例']"
+                    filterable
+                    filter-placeholder="请输入用例名称"
+                    :props="{
+                        key: 'id',
+                        label: 'title'
+                        }"
+                    style="margin-left: 110px;"
+            >
+
+            </el-transfer>
+            <div slot="footer" class="dialog-footer">
+                <el-button @click="collectionFormVisible = false">取 消</el-button>
+                <el-button type="primary" @click="joinCase">确 定</el-button>
+            </div>
+        </el-dialog>
+    </div>
+    <div id="pagination">
+        <el-pagination
+                @size-change="handleSizeChange"
+                @current-change="handleCurrentChange"
+                :current-page="currentPage"
+                :page-sizes="[4, 5, 6, 7]"
+                :page-size="filter_query.limit"
+                layout="total, sizes, prev, pager, next, jumper"
+                :total="total">
+        </el-pagination>
+    </div>
+    <el-dialog title="集合报告" :visible.sync="showResultVisible">
+        <el-dialog width="95%" title="详细报告" :visible.sync="showResultInnerVisible" append-to-body>
+
+            <template>
+                <el-table
+                        :data="report_detail_data"
+                        style="width: 100%">
+                    <el-table-column type="expand">
+                        <template slot-scope="props">
+                            <el-form label-position="left" inline class="demo-table-expand">
+                                <el-form-item label="url">
+                                    <span>{{ props.row.url }}</span>
+                                </el-form-item>
+                                <el-form-item label="请求方式">
+                                    <span>{{ props.row.method }}</span>
+                                </el-form-item>
+                                <el-form-item label="请求参数">
+                                    <span>{{ props.row.params }}</span>
+                                </el-form-item>
+                                <el-form-item label="检查点">
+                                    <span>{{ props.row.check }}</span>
+                                </el-form-item>
+                                <el-form-item label="失败原因">
+                                    <span>{{ props.row.reason }}</span>
+                                </el-form-item>
+                                <el-form-item label="返回参数">
+                                    <el-tooltip style="margin: 4px;" effect="dark" :content="props.row.response" placement="top">
+                                        <el-button type="text">鼠标悬浮显示参数</el-button>
+                                    </el-tooltip>
+                                </el-form-item>
+                            </el-form>
+                        </template>
+                    </el-table-column>
+                    <el-table-column
+                            label="用例名称"
+                            prop="title">
+                    </el-table-column>
+                    <el-table-column
+                            label="归属项目"
+                            prop="project_name">
+                    </el-table-column>
+                    <el-table-column
+                            label="用例集合"
+                            prop="case_collection">
+                    </el-table-column>
+                    <el-table-column
+                            label="状态"
+                            prop="status">
+                    </el-table-column>
+                    <el-table-column
+                            label="运行时长"
+                            prop="duration">
+                    </el-table-column>
+                    <el-table-column
+                            label="运行用户"
+                            prop="run_user">
+                    </el-table-column>
+                    <el-table-column
+                            label="运行时间"
+                            prop="run_time">
+                    </el-table-column>
+                </el-table>
+            </template>
+        </el-dialog>
+
+
+        <el-card class="box-card">
+            <h1>{{report_data.case_collection}}</h1>
+            <ul>
+                <li class="text item">用例数量：{{report_data.case_count}}</li>
+                <li class="text item">通过数量：{{report_data.pass_count}}</li>
+                <li class="text item">失败数量：{{report_data.fail_count}}</li>
+                <li class="text item">运行时长：{{report_data.duration}}</li>
+                <li class="text item">运行用户：{{report_data.run_user}}</li>
+                <li class="text item">运行时间：{{report_data.run_time}}</li>
+                <li class="text item">详细结果：
+                    <el-button type="text" @click="getDetailReprot">查看详细</el-button>
+                </li>
+            </ul>
+        </el-card>
+    </el-dialog>
+</div>
+
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="https://cdn.bootcss.com/axios/0.19.0/axios.min.js"></script>
+<script src="../js/config.js"></script>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            currentPage: 1,
+            total: 0,
+            filter_query: {
+                project: undefined,
+                search: undefined,
+                limit: 4,
+                page: 1
+            },
+            projects: [],
+            tableData: [],
+            dialogTableVisible: false,
+            dialogFormVisible: false,
+            collectionFormVisible: false,
+            showResultVisible: false,
+            showResultInnerVisible: false,
+            multipleSelection: null,
+            dialog_title: '添加',
+            form: {
+                name: '',
+                project_id: '',
+                desc: '',
+            },
+            formLabelWidth: '120px',
+            case_data: [],
+            value: [],
+            loading: false,
+            button_loading: false,
+            id: undefined,
+            report_data: '',
+            report_detail_query: '',
+            report_detail_data: [],
+            tableData5: [{
+                id: '12987122',
+                name: '好滋好味鸡蛋仔',
+                category: '江浙小吃、小吃零食',
+                desc: '荷兰优质淡奶，奶香浓而不腻',
+                address: '上海市普陀区真北路',
+                shop: '王小虎夫妻店',
+                shopId: '10333'
+            }]
+        },
+        mounted: function () {
+            this.get_project_data();
+            this.get_page_data();
+        },
+        methods: {
+            getReport(row) {
+                axios({
+                    url: host + '/api/collection_report?id=' + row.id,
+                    method: 'get',
+                }).then((response) => {
+                    this.showResultVisible = true;
+                    var data = response.data.data;
+                    this.report_detail_query = 'case_collection_id=' + row.id + '&report_batch=' + data.report_batch;
+                    this.report_data = data;
+                })
+            },
+            getDetailReprot() {
+                axios({
+                    method: 'get',
+                    url: host + '/api/report?' + this.report_detail_query,
+                }).then((response) => {
+                    this.showResultInnerVisible = true;
+                    this.report_detail_data = response.data.data
+                });
+
+            },
+            joinCase() {
+                let data = {
+                    join_case_list: JSON.stringify(this.value),
+                    id: this.id,
+                };
+                axios({
+                    method: 'post',
+                    url: host + '/api/join_case',
+                    data: this.data_to_string(data)
+                }).then((response) => {
+
+                    if (response.data.code == 0) {
+                        this.collectionFormVisible = false;
+                        this.get_page_data();
+                    } else {
+                        this.$message({
+                            type: 'error',
+                            message: response.data.msg
+                        })
+                    }
+                }).catch((error) => {
+                    this.$message({
+                        type: 'error',
+                        message: error
+                    })
+                })
+            },
+            handleSizeChange(val) {
+                this.filter_query.limit = val;
+                this.filter_query.page = 1;
+                this.get_page_data();
+            },
+            handleCurrentChange(val) {
+                this.filter_query.page = val;
+                this.get_page_data();
+            },
+            data_to_string(data) {
+                let tmp = new FormData();
+                for (var key in data) {
+                    tmp.append(key, data[key])
+                }
+                return tmp
+            },
+            get_project_data: function () {
+                axios({
+                    method: 'get',
+                    url: host + '/api/project',
+                }).then((response) => {
+                    this.projects = response.data.data;
+                })
+            }
+            ,
+            get_page_data: function () {
+                this.loading = true; //
+                axios({
+                    method: 'get',
+                    url: host + '/api/case_collection',
+                    params: this.filter_query
+                }).then((response) => {
+                    this.tableData = response.data.data;
+                    this.total = response.data.count;
+                    this.loading = false; //
+                })
+            }
+            ,
+            search: function () {
+                this.filter_query.page = 1;
+                this.get_page_data()
+            }
+            ,
+            handleSelectionChange(val) {
+                var ids = [];
+                for (var num in val) {
+                    ids.push(val[num].id)
+                }
+                this.multipleSelection = ids
+            }
+            ,
+            handle_edit(index, row) {
+                this.form = Object.assign({}, {name: row.name, project_id: row.project_id, desc: row.desc, id: row.id}); //深拷贝
+                this.dialog_title = "编辑";
+                this.dialogFormVisible = true //打开模态框
+            },
+            get_join_case(row) {
+                this.collectionFormVisible = true;
+                axios({
+                    method: 'get',
+                    url: host + '/api/join_case',
+                    params: {
+                        project_id: row.project_id,
+                        id: row.id
+                    }
+                }).then((response) => {
+                    this.id = row.id;
+                    this.case_data = response.data.data.all_case;
+                    this.value = response.data.data.join_case;
+                })
+            },
+            handle_delete(row) {
+                this.$confirm('确认删除当前集合吗？', '提示', {
+                    confirmButtonText: '确定',
+                    cancelButtonText: '取消',
+                    type: 'warning'
+                }).then(() => {
+                    axios({
+                        method: 'delete',
+                        url: host + '/api/case_collection?id=' + row.id
+                    }).then((response) => {
+                        this.$message({
+                            type: 'success',
+                            message: '删除成功'
+                        });
+                        this.get_page_data();
+
+                    }).catch((error) => {
+                        this.$message({
+                            type: 'error',
+                            message: error
+                        });
+                    })
+
+                }).catch(() => {
+                    this.$message({
+                        type: 'info',
+                        message: '取消删除'
+                    });
+                })
+
+            },
+            add_collection() {
+                this.reset_form();
+                this.dialog_title = "添加";
+                this.dialogFormVisible = true
+            },
+            reset_form() {
+                //form数据置为空
+                this.form = {
+                    name: '',
+                    project_id: '',
+                    desc: ''
+                }
+            },
+            operate() {
+                this.button_loading = true;
+                if (this.dialog_title == '添加') {
+                    var method = 'post';
+                    var url = host + '/api/case_collection';
+                } else if (this.dialog_title == '编辑') {
+                    var method = 'put';
+                    var url = host + '/api/case_collection?id=' + this.form.id;
+                }
+                axios({
+                    method: method,
+                    url: url,
+                    data: this.data_to_string(this.form),
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    }
+
+                }).then((response) => {
+                    this.button_loading = false;
+                    if (response.data.code == 0) {
+                        this.dialogFormVisible = false; //关闭模态框
+                        this.get_page_data();
+                    } else {
+                        this.$message({
+                            type: 'error',
+                            message: response.data.msg
+                        })
+                    }
+                }).catch((error) => {
+                    this.button_loading = false;
+                    this.$message({
+                        type: 'error',
+                        message: error
+                    });
+                })
+
+            },
+            run() {
+                this.loading = true;
+                if (this.multipleSelection == null) {
+                    this.loading = false;
+                    this.$message({
+                        type: 'error',
+                        message: '最少选择一个用例集合..'
+                    });
+                    return
+                }
+                axios({
+                    method: 'post',
+                    url: host + '/api/run_collection',
+                    data: this.data_to_string({collect_id: JSON.stringify(this.multipleSelection), user_id: 1}),
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    }
+                }).then((response) => {
+                    this.loading = false;
+                    if (response.data.code == 0) {
+                        this.$message({
+                            type: 'info',
+                            duration: 1000,
+                            message: response.data.msg
+                        });
+                        this.get_page_data();
+                    } else {
+                        this.loading = false;
+                        this.$message({
+                            type: 'error',
+                            duration: 1000,
+                            message: response.data.msg
+                        })
+                    }
+                })
+
+            }
+        }
+        ,
+        filters: {
+            status: function (num) {
+                if (num == 3) {
+                    return '运行中'
+                } else if (num == 2) {
+                    return '未运行'
+                } else {
+                    return '执行完毕'
+                }
+            }
+        }
+
+    })
+</script>
+</body>
+</html>

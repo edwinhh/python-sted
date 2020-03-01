@@ -74,4 +74,4 @@ class User(BaseModel):
     class Meta:
         verbose_name = '用户表'
         verbose_name_plural = verbose_name
-        db_table = 'eg_user'
+        db_table = 'user'

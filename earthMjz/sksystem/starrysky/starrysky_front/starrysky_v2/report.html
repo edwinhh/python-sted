@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--        <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">-->
+    <link rel="stylesheet" href="../js/index.css">
+    <style>
+        .text {
+            font-size: 14px;
+        }
+
+        .item {
+            margin-bottom: 18px;
+        }
+
+        .box-card {
+            width: 100%;
+        }
+
+        #json .el-form-item__content {
+            width: 100%;
+        }
+    </style>
+    <style>
+        .demo-table-expand {
+            font-size: 0;
+        }
+
+        .demo-table-expand label {
+            width: 90px;
+            color: #99a9bf;
+        }
+
+        .demo-table-expand .el-form-item {
+            margin-right: 0;
+            margin-bottom: 0;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <div id="bar">
+        <!--搜索、筛选-->
+        <el-form :inline="true" class="demo-form-inline">
+            <el-form-item>
+                <el-input placeholder="搜索" v-model="filter_query.search"></el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-select placeholder="项目" v-model="filter_query.project">
+                    <el-option v-for="item in projects" :key="item.id" :label="item.name" :value="item.id"></el-option>
+                </el-select>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" @click="search">查询</el-button>
+            </el-form-item>
+        </el-form>
+    </div>
+    <div id="table">
+
+        <template>
+            <el-table
+                    v-loading="loading"
+                    element-loading-text="玩命加载中..."
+                    :data="report_detail_data"
+                    style="width: 100%">
+                <el-table-column type="expand">
+                    <template slot-scope="props">
+                        <el-form label-position="left" inline class="demo-table-expand">
+                            <el-form-item label="url">
+                                <span>{{ props.row.url }}</span>
+                            </el-form-item>
+                            <el-form-item label="请求方式">
+                                <span>{{ props.row.method }}</span>
+                            </el-form-item>
+                            <el-form-item label="请求参数">
+                                <span>{{ props.row.params }}</span>
+                            </el-form-item>
+                            <el-form-item label="检查点">
+                                <span>{{ props.row.check }}</span>
+                            </el-form-item>
+                            <el-form-item label="失败原因">
+                                <span>{{ props.row.reason }}</span>
+                            </el-form-item>
+                            <el-form-item label="返回参数">
+                                <el-tooltip style="margin: 4px;" effect="dark" :content="props.row.response"
+                                            placement="top">
+                                    <el-button type="text">鼠标悬浮显示参数</el-button>
+                                </el-tooltip>
+                            </el-form-item>
+                        </el-form>
+                    </template>
+                </el-table-column>
+                <el-table-column
+                        label="用例名称"
+                        prop="title">
+                </el-table-column>
+                <el-table-column
+                        label="归属项目"
+                        prop="project_name">
+                </el-table-column>
+                <el-table-column
+                        label="用例集合"
+                        prop="case_collection">
+                </el-table-column>
+                <el-table-column
+                        label="状态">
+                    <template slot-scope="scope">
+                        <el-tag :type="scope.row.status == 3 ? 'danger' : 'success'"
+                                disable-transitions>{{scope.row.status|status}}
+                        </el-tag>
+                    </template>
+                </el-table-column>
+                <el-table-column
+                        label="运行时长">
+                    <template slot-scope="scope">
+                        <el-tag type="text">{{scope.row.duration}}ms</el-tag>
+                    </template>
+                </el-table-column>
+                <el-table-column
+                        label="运行用户"
+                        prop="run_user">
+                </el-table-column>
+                <el-table-column
+                        label="运行时间"
+                        prop="run_time">
+                </el-table-column>
+            </el-table>
+        </template>
+    </div>
+    <div id="pagination">
+        <el-pagination
+                @size-change="handleSizeChange"
+                @current-change="handleCurrentChange"
+                :current-page="currentPage"
+                :page-sizes="[10, 30, 50, 100]"
+                :page-size="filter_query.limit"
+                layout="total, sizes, prev, pager, next, jumper"
+                :total="total">
+        </el-pagination>
+    </div>
+</div>
+
+<!-- import Vue before Element -->
+<!--<script src="https://unpkg.com/vue/dist/vue.js"></script>-->
+<script src="../js/vue.js"></script>
+<!-- import JavaScript -->
+<!--<script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+<script src="../js/index.js"></script>
+<!--<script src="https://cdn.bootcss.com/axios/0.19.0/axios.min.js"></script>-->
+<script src="../js/axios.min.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/utils.js"></script>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            currentPage: 1,
+            total: 0,
+            filter_query: {
+                project: undefined,
+                search: undefined,
+                limit: 10,
+                page: 1
+            },
+            projects: [],
+            loading:false,
+            report_detail_data: [],
+        },
+        mounted: function () {
+            this.get_project_data();
+            this.get_page_data();
+        },
+        methods: {
+            handleSizeChange(val) {
+                this.filter_query.limit = val;
+                this.filter_query.page = 1;
+                this.get_page_data();
+            },
+            handleCurrentChange(val) {
+                this.filter_query.page = val;
+                this.get_page_data();
+            },
+            get_project_data: function () {
+                axios({
+                    method: 'get',
+                    url: host + '/api/project',
+                    headers: {'token': get_token()},
+                }).then((response) => {
+                    this.projects = response.data.data;
+                })
+            },
+
+            get_page_data: function () {
+                this.loading = true; //
+                axios({
+                    method: 'get',
+                    url: host + '/api/report',
+                    params: this.filter_query,
+                    headers: {'token': get_token()},
+                }).then((response) => {
+                    this.report_detail_data = response.data.data;
+                    this.total = response.data.count;
+                    this.loading = false; //
+                })
+            }
+            ,
+            search: function () {
+                this.filter_query.page = 1;
+                this.get_page_data()
+            }
+        }
+        ,
+        filters: {
+            status: function (num) {
+                if (num == 3) {
+                    return '运行中'
+                } else if (num == 2) {
+                    return '未运行'
+                } else {
+                    return '执行完毕'
+                }
+            }
+        }
+
+    })
+</script>
+</body>
+</html>

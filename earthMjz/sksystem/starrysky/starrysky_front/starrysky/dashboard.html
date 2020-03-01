@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>主页</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../layuiadmin/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../layuiadmin/style/admin.css" media="all">
+</head>
+<body>
+
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+
+        <div class="layui-col-sm6 layui-col-md3">
+            <div class="layui-card">
+                <div class="layui-card-header">
+                    项目数量
+                </div>
+                <div class="layui-card-body layuiadmin-card-list">
+                    <p class="layuiadmin-big-font" id="project_count"></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="layui-col-sm6 layui-col-md3">
+            <div class="layui-card">
+                <div class="layui-card-header">
+                    接口数量
+                </div>
+                <div class="layui-card-body layuiadmin-card-list">
+                    <p class="layuiadmin-big-font" id="interface_count"></p>
+                </div>
+            </div>
+        </div>
+        <div class="layui-col-sm6 layui-col-md3">
+            <div class="layui-card">
+                <div class="layui-card-header">
+                    用例集合
+                </div>
+                <div class="layui-card-body layuiadmin-card-list">
+
+                    <p class="layuiadmin-big-font" id="collection_count"></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="layui-col-sm6 layui-col-md3">
+            <div class="layui-card">
+                <div class="layui-card-header">
+                    用例数量
+                </div>
+                <div class="layui-card-body layuiadmin-card-list">
+
+                    <p class="layuiadmin-big-font" id="case_count"></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="layui-col-sm12">
+            <div class="layui-card">
+                <div class="layui-card-header">
+                    数据统计
+
+                </div>
+                <div class="layui-card-body" style="width: 100%;height: 600px">
+                    <div carousel-item id="LAY-index-normcol" style="height: 100%;width: 100%"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="../layuiadmin/layui/layui.js"></script>
+<script src="../js/config.js"></script>
+<script src="https://cdn.bootcss.com/echarts/4.3.0-rc.2/echarts.min.js"></script>
+
+<script>
+    layui.config({
+        base: '../layuiadmin/' //静态资源所在路径
+    }).extend({
+        index: 'lib/index' //主入口模块
+    }).use(['index'], function () {
+        layui.$.ajax(
+            {
+                url: host + '/api/home_page',
+                type: 'get',
+                headers: {'token': get_token()},
+                success: function (data) {
+                    if (data.code == 0) {
+                        document.getElementById('project_count').innerText=data.data.project_count;
+                        document.getElementById('interface_count').innerText=data.data.interface_count;
+                        document.getElementById('collection_count').innerText=data.data.collection_count;
+                        document.getElementById('case_count').innerText=data.data.case_count;
+                        var myChart = echarts.init(document.getElementById('LAY-index-normcol'));
+                        option = {
+                            tooltip: {
+                                trigger: 'axis',
+                                axisPointer: {
+                                    type: 'cross',
+                                    crossStyle: {
+                                        color: '#999'
+                                    }
+                                }
+                            },
+                            toolbox: {
+                                feature: {
+                                    dataView: {show: true, readOnly: false},
+                                    magicType: {show: true, type: ['line', 'bar']},
+                                    restore: {show: true},
+                                    saveAsImage: {show: true}
+                                }
+                            },
+                            legend: {
+                                data: ['通过用例数', '执行用例数', '失败用例数']
+                            },
+                            xAxis: [
+                                {
+                                    type: 'category',
+                                    // data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+                                    data: data.data.date,
+                                    axisPointer: {
+                                        type: 'shadow'
+                                    }
+                                }
+                            ],
+                            yAxis: [
+                                {
+                                    type: 'value',
+                                    name: '成功次数',
+                                    min: 0,
+                                    max: data.data.max_pass_count,
+                                    interval: 5,
+                                    axisLabel: {
+                                        formatter: '{value} 次'
+                                    }
+                                },
+                                {
+                                    type: 'value',
+                                    name: '执行次数',
+                                    min: 0,
+                                    max: data.data.max_all_count,
+                                    interval: 5,
+                                    axisLabel: {
+                                        formatter: '{value} 次'
+                                    }
+                                }
+                            ],
+                            series: [
+                                {
+                                    name: '通过用例数',
+                                    type: 'bar',
+                                    // data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]
+                                    data: data.data.pass_count
+                                },
+                                {
+                                    name: '执行用例数',
+                                    type: 'bar',
+                                    data: data.data.all_count
+                                },
+                                {
+                                    name: '失败用例数',
+                                    type: 'line',
+                                    yAxisIndex: 1,
+                                    data: data.data.fail_count
+                                }
+                            ]
+                        };
+                        myChart.setOption(option);
+                    }
+
+                }
+            }
+        );
+    });
+</script>
+<script src="../js/utils.js"></script>
+<script>
+
+
+</script>
+</body>
+</html>

@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',#允许跨域的app，需要安装django-cors-headers
     'example.apps.ExampleConfig', #例子的app
+    'sksystem'
 
 ]
 

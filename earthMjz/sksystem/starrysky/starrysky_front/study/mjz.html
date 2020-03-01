@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="../js/index.css">
+    <style>
+        .position div {
+            width: 100%;
+        }
+
+        .text {
+            font-size: 14px;
+        }
+
+        .item {
+            margin-bottom: 18px;
+        }
+
+        .demo-table-expand {
+            font-size: 0;
+        }
+
+        .demo-table-expand label {
+            width: 90px;
+            color: #99a9bf;
+        }
+
+        .demo-table-expand .el-form-item {
+            margin-right: 0;
+            margin-bottom: 0;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <div id="search">
+        <el-form :inline="true" class="demo-form-inline">
+            <el-form-item>
+                <el-input v-model="query_search.search" placeholder="搜索"></el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-select v-model="query_search.project">
+                    <el-option laber="请选择" value="">请选择</el-option>
+                    <el-option v-for="item in projects" :key="item.id" :value="item.id" :label="item.name"></el-option>
+                </el-select>
+            </el-form-item>
+
+            <el-form-item>
+                <el-button type="primary" @click="search">查询</el-button>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" @click="add">添加</el-button>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" @click="interfaceVisible=true">添加接口</el-button>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" @click="onSubmit">运行</el-button>
+            </el-form-item>
+        </el-form>
+    </div>
+    <div id="table">
+        <el-table
+                v-loading="loading"
+                ref="multipleTable"
+                :data="case_collection_data"
+                tooltip-effect="dark"
+                style="width: 100%"
+                @selection-change="handleSelectionChange">
+            <el-table-column
+                    type="selection"
+                    width="55">
+            </el-table-column>
+            <el-table-column
+                    label="集合名称">
+                <template slot-scope="scope">
+                    <el-button type="text" @click="edit(scope.row)">{{scope.row.name}}</el-button>
+                </template>
+            </el-table-column>
+            <el-table-column
+                    prop="desc"
+                    label="描述">
+            </el-table-column>
+            <el-table-column
+                    prop="project_name"
+                    label="归属项目"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column
+                    prop="case_count"
+                    label="用例数量"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column
+                    prop="report_name"
+                    label="测试报告"
+                    show-overflow-tooltip>
+                <template slot-scope="scope">
+                    <el-button @click="showReport(scope.row)">查看</el-button>
+                </template>
+            </el-table-column>
+            <el-table-column
+                    prop="user"
+                    label="创建用户"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column
+                    label="状态"
+                    show-overflow-tooltip>
+                <template slot-scope="scope">
+                    <el-tag type="danger">{{ scope.row.status|replaceStatus }}</el-tag>
+                </template>
+            </el-table-column>
+            <el-table-column
+                    prop="create_time"
+                    label="创建时间"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column
+                    prop="address"
+                    label="操作"
+                    show-overflow-tooltip
+                    width="400">
+                <template slot-scope="scope">
+                    <el-button @click="join_case(scope.row)">选择用例</el-button>
+                    <el-button type="danger" @click="remove_collection(scope.row)">删除</el-button>
+                </template>
+            </el-table-column>
+        </el-table>
+    </div>
+    <div id="pagination">
+        <el-pagination
+                @size-change="handleSizeChange"
+                @current-change="handleCurrentChange"
+                :current-page="query_search.page"
+                :page-sizes="[5,10]"
+                :page-size="query_search.limit"
+                layout="total, sizes, prev, pager, next, jumper"
+                :total="count">
+        </el-pagination>
+
+    </div>
+    <!--    编辑和添加用一个-->
+    <div id="edit">
+        <el-dialog :title="title" :visible.sync="dialogFormVisible" v-loading="loading">
+            {{form}}
+            <el-form :model="form">
+                <el-form-item label="集合名称" :label-width="formLabelWidth">
+                    <el-input v-model="form.name" autocomplete="off"></el-input>
+                </el-form-item>
+                <el-form-item label="集合描述" :label-width="formLabelWidth">
+                    <el-input v-model="form.desc" autocomplete="off"></el-input>
+                </el-form-item>
+                <el-form-item label="项目归属" :label-width="formLabelWidth">
+                    <el-select v-model="form.project">
+                        <el-option laber="请选择" value="">请选择</el-option>
+                        <el-option v-for="item in projects" :key="item.id" :value="item.id"
+                                   :label="item.name"></el-option>
+                    </el-select>
+                </el-form-item>
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+                <el-button @click="dialogFormVisible = false">取 消</el-button>
+                <el-button type="primary" @click="onSubmit" :loading="button_loading">确 定</el-button>
+            </div>
+        </el-dialog>
+    </div>
+    <div id="join_case">
+        <el-dialog title="关联用例" :visible.sync="joinCaseFormVisible" v-loading="loading">
+            <el-transfer :titles="['未选择用例', '已选择用例']" filterable v-model="value" :data="all_case"
+                         :props="{key:'id',label:'title'}"></el-transfer>
+
+            <div slot="footer" class="dialog-footer">
+                <el-button @click="joinCaseFormVisible = false">取 消</el-button>
+                <el-button type="primary" @click="onSubmitCase" :loading="button_loading">确 定</el-button>
+            </div>
+        </el-dialog>
+    </div>
+    <div id="report">
+        <!--        外层-->
+        <el-dialog title="集合报告" :visible.sync="outerReport">
+            <!--            内层的dialog-->
+            <el-dialog title="详细报告" :visible.sync="innerReport" append-to-body width="100%">
+
+                <el-table
+                        :data="report_detail_data"
+                        style="width: 100%">
+                    <!--                    表格被展开时的字段-->
+                    <el-table-column type="expand">
+                        <template slot-scope="props">
+                            <el-form label-position="left" inline class="demo-table-expand">
+                                <el-form-item label="url">
+                                    <span>{{ props.row.url }}</span>
+                                </el-form-item>
+                                <el-form-item label="请求方式">
+                                    <span>{{ props.row.method }}</span>
+                                </el-form-item>
+                                <el-form-item label="请求参数">
+                                    <span>{{ props.row.params }}</span>
+                                </el-form-item>
+                                <el-form-item label="检查点">
+                                    <span>{{ props.row.check }}</span>
+                                </el-form-item>
+                                <el-form-item label="失败原因">
+                                    <span>{{ props.row.reason }}</span>
+                                </el-form-item>
+                                <el-form-item label="返回参数">
+                                    <el-tooltip class="item" effect="dark" :content="props.row.response"
+                                                placement="bottom">
+                                        <el-button type="text">鼠标悬浮显示全部参数</el-button>
+                                    </el-tooltip>
+                                </el-form-item>
+                            </el-form>
+                        </template>
+                    </el-table-column>
+                    <el-table-column
+                            label="用例名称"
+                            prop="title">
+                    </el-table-column>
+                    <el-table-column
+                            label="归属醒目"
+                            prop="project_name">
+                    </el-table-column>
+                    <el-table-column
+                            label="用例集合"
+                            prop="case_collection">
+                    </el-table-column>
+                    <el-table-column
+                            label="状态"
+                            prop="status">
+                    </el-table-column>
+                    <el-table-column
+                            label="运行时长"
+                            prop="duration">
+                    </el-table-column>
+                    <el-table-column
+                            label="运行用户"
+                            prop="user">
+                    </el-table-column>
+                    <el-table-column
+                            label="运行时间"
+                            prop="create_time">
+                    </el-table-column>
+                </el-table>
+
+
+            </el-dialog>
+
+            <el-card class="box-card">
+                <h1>{{report_data.case_collection}}</h1>
+                <ul>
+                    <li class="text item">用例数量：{{report_data.case_count}}</li>
+                    <li class="text item">通过数量：{{report_data.pass_count}}</li>
+                    <li class="text item">失败数量：{{report_data.fail_count}}</li>
+                    <li class="text item">运行时长：{{report_data.duration}}</li>
+                    <li class="text item">运行用户：{{report_data.run_user}}</li>
+                    <li class="text item">运行时间：{{report_data.run_time}}</li>
+                    <li class="text item">详细结果：
+                        <el-button type="text" @click="getDetailReprot">查看详细</el-button>
+                    </li>
+                </ul>
+            </el-card>
+
+
+        </el-dialog>
+    </div>
+
+
+    <div id="interface">
+        <el-dialog title="添加" :visible.sync="interfaceVisible">
+
+            <el-tabs v-model="activeName">
+                <el-tab-pane label="接口信息" name="first">用户管理</el-tab-pane>
+                <el-tab-pane label="默认参数" name="second">
+                    {{params}}
+                    <el-form :inline="true" class="demo-dynamic">
+                        <el-form-item
+                                style="width: 100%"
+                                class="position"
+                                v-for="(item, index) in params"
+                                :key="item.key"
+                                :prop="'item.' + index + '.value'">
+                            <el-input v-model="item.name" style="width: 35%"></el-input>
+                            <el-input v-model="item.value" style="width: 35%"></el-input>
+                            <el-button @click="addDomain">新增域名</el-button>
+                            <el-button @click.prevent="removeDomain(item)">删除</el-button>
+                        </el-form-item>
+                    </el-form>
+                </el-tab-pane>
+
+                <el-tab-pane label="默认header" name="third">角色管理</el-tab-pane>
+            </el-tabs>
+
+
+            <div slot="footer" class="dialog-footer">
+                <el-button @click="dialogFormVisible = false">取 消</el-button>
+                <el-button type="primary" @click="interfaceAdd" :loading="button_loading">确 定</el-button>
+            </div>
+        </el-dialog>
+    </div>
+
+</div>
+
+
+<!-- 引入组件库 -->
+<script src="../js/vue.js"></script>
+<script src="../js/axios.min.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/config.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            // 接口页面的功能
+            interfaceVisible: false,
+            activeName: 'first',
+            params: [{
+                value: '',
+                name: ''
+            }],
+            headers: [{
+                value: '',
+                name: ''
+            }],
+            interfaceForm:{
+              headers:'',
+              params:'',
+                name:'',
+                uri:'',
+                project:''
+            },
+            // tmp:{name:'hyf',age:18}, // 给后端传递时希望是这种格式
+
+
+            query_search: {
+                search: undefined,
+                project: undefined,
+                page: 1,
+                limit: 5
+            },
+            projects: [],
+            case_collection_data: [],  // 列表数据
+            multipleSelection: [],
+            count: 0,
+            dialogFormVisible: false,
+            joinCaseFormVisible: false,
+            formLabelWidth: '120px',
+            form: {
+                name: '',
+                desc: '',
+                project: ''
+            },
+            title: '添加',
+            loading: false,
+            button_loading: false,
+            all_case: [],
+            value: [],
+            collection_id: '',
+            outerReport: false,
+            innerReport: false,
+            report_data: {},
+            report_detail_data: [],
+            batch: '',
+            detail_report_query: '',
+
+
+        },
+        methods: {
+            // 接口页面的功能
+            removeDomain(item) {
+                var index = this.params.indexOf(item);
+                if (index !== -1) {
+                    this.params.splice(index, 1)
+                }
+            },
+            addDomain() {
+                this.params.push({
+                    value: '',
+                    name: '',
+                    key: Date.now()
+                });
+            },
+            set_params_headers() {
+                let params = {};
+                for (var num in this.params) {
+                    let item = this.params[num];
+                    params[item.name] = item.value;
+                }
+                // 把字段变成字符串JSON.stringify(params); ==  json.dumps（）
+                this.interfaceForm.params = JSON.stringify(params);
+
+                let headers = {};
+                for (var num in this.headers) {
+                    let item = this.headers[num];
+                    headers[item.name] = headers.value;
+                }
+                this.interfaceForm.headers = JSON.stringify(headers);
+            },
+            interfaceAdd() {
+                this.set_params_headers();
+                console.log(this.interfaceForm)
+
+            },
+
+
+            getDetailReprot() {
+                axios({
+                    method: 'get',
+                    // url: host + '/api/report'+ this.detail_report_query, // 第二种方法
+                    url: host + '/api/report',
+                    params: {
+                        case_collection_id: this.collection_id,
+                        report_batch: this.batch,
+                    }
+                }).then((response) => {
+                    this.innerReport = true;
+                    this.report_detail_data = response.data.data;
+
+                });
+
+
+            },
+            showReport(row) {
+                axios({
+                    url: host + '/api/collection_report',
+                    method: 'get',
+                    params: {
+                        id: row.id
+                    }
+                }).then((response) => {
+                    this.outerReport = true;
+                    this.report_data = response.data.data;
+                    // this.detail_report_query = '?id='+row.id+'&report_batch='+this.report_data.report_batch; // 第二种方式
+                    this.collection_id = row.id;
+                    this.batch = this.report_data.report_batch;
+
+                })
+
+            },
+            onSubmitCase() {
+                axios({
+                    method: 'post',
+                    url: host + '/api/join_case',
+                    data: {id: this.collection_id, join_case_list: this.value}
+                }).then((response) => {
+                    if (response.data.code == 0) {
+                        this.joinCaseFormVisible = false;
+                        this.$message({
+                            type: 'success',
+                            message: response.data.msg
+                        });
+                    }
+
+                })
+            },
+            join_case(row) {
+                this.left = [];
+                this.collection_id = row.id;
+                axios({
+                    url: host + '/api/join_case',
+                    method: 'get',
+                    params: {
+                        id: row.id,
+                    }
+                }).then((response) => {
+                    this.joinCaseFormVisible = true; // 展示
+                    this.all_case = response.data.data.all_case; // 所有数据源
+                    this.value = response.data.data.join_case; // 已选择数据源
+                })
+
+
+            },
+            remove_collection(row) {
+                this.$confirm('此操作将永久删除用例集合, 是否继续?', '提示', {
+                    confirmButtonText: '确定',
+                    cancelButtonText: '取消',
+                    type: 'warning'
+                }).then(() => {
+                    // 如果点了确认 需要调用删除方法进行删除
+                    axios({
+                        url: host + '/api/case_collection?id=' + row.id,
+                        method: 'delete'
+                    }).then((response) => {
+                        if (response.data.data.code == 0) {
+                            this.$message({
+                                type: 'success',
+                                message: '删除成功!'
+                            });
+                        }
+
+
+                    });
+
+
+                }).catch(() => {
+                    this.$message({
+                        type: 'info',
+                        message: '已取消删除'
+                    });
+                });
+            },
+            add() {
+                this.dialogFormVisible = true;
+                this.title = '添加';
+                this.reset_form()
+            },
+            edit(row) {
+                this.dialogFormVisible = true;
+                this.title = '编辑';
+                this.form = {
+                    name: row.name,
+                    desc: row.desc,
+                    project: row.project_id,
+                }
+            },
+            search() {
+                this.get_page_data()
+            },
+            handleSizeChange(val) {
+                this.query_search.limit = val;
+                this.get_page_data()
+            },
+            handleCurrentChange(val) {
+                this.query_search.page = val;
+                this.get_page_data()
+            },
+            handleSelectionChange(val) {
+                let ids = [];
+                for (var num in val) {
+                    ids.push(val[num].id)
+                }
+                this.multipleSelection = ids;
+            },
+            reset_form() {
+                this.form = {
+                    name: '',
+                    desc: '',
+                    project: ''
+                }
+            },
+            onSubmit() {
+                this.button_loading = true;
+                axios({
+                    url: host + '/api/case_collection',
+                    method: 'post',
+                    data: this.form,
+                }).then((response) => {
+                    let data = response.data;
+                    if (data.code == 0) {
+                        this.button_loading = false;
+                        this.dialogFormVisible = false;
+                        this.get_page_data(); // 获取table最新数据
+
+                    } else {
+                        this.$message.error(data.msg);
+                    }
+                })
+            },
+            get_project_data() {
+                axios({
+                    method: 'get',
+                    url: host + '/api/project'
+                }).then((response) => {
+
+                    this.projects = response.data.data;
+                })
+            },
+            get_page_data() {
+                this.loading = true;
+                axios({
+                    method: 'get',
+                    url: host + '/api/case_collection',
+                    params: this.query_search
+                }).then((response) => {
+                    this.loading = false;
+                    this.case_collection_data = response.data.data;
+                    this.count = response.data.count;
+                })
+            }
+        },
+        created: function () {
+            // 请求项目接口 获取项目数据
+            this.get_project_data();
+            // 获取页面的数据
+            this.get_page_data()
+        },
+        filters: {
+            replaceStatus(status) {
+                if (status == 3) {
+                    return '运行中'
+                } else {
+                    return '运行结束'
+                }
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

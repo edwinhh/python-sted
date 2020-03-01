@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+<body style="background-color: white;">
+<div id="app" style="margin-left: 20px">
+    <div id="bar">
+        <!--搜索、筛选-->
+        <el-form :inline="true" :model="filter_query" class="demo-form-inline">
+            <el-form-item>
+                <el-input v-model="filter_query.search" placeholder="搜索"></el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-select v-model="filter_query.project" placeholder="项目">
+                    <el-option :key="project.id" v-for="project in projects" :label="project.name"
+                               :value="project.id"></el-option>
+                </el-select>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" @click="handle_filter">查询</el-button>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" @click="handle_create">添加</el-button>
+            </el-form-item>
+        </el-form>
+    </div>
+    <div id="table">
+        <!--数据列表-->
+        <el-table
+                ref="multipleTable"
+                :data="tableData"
+                tooltip-effect="dark"
+                style="width: 100%"
+                v-loading="table_loading"
+                @selection-change="handleSelectionChange">
+            <el-table-column
+                    type="selection"
+                    width="55">
+            </el-table-column>
+            <el-table-column
+                    label="用例标题"
+                    prop="title"
+                    width="120">
+            </el-table-column>
+            <el-table-column
+                    prop="interface"
+                    label="接口"
+                    width="120">
+            </el-table-column>
+            <el-table-column
+                    prop="project"
+                    label="项目"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column
+                    label="查看结果"
+                    show-overflow-tooltip>
+                <template slot-scope="scope">
+                    <el-button
+                            size="mini"
+                            @click="handleEdit(scope.$index, scope.row)">查看
+                    </el-button>
+                </template>
+
+            </el-table-column>
+            <el-table-column
+                    prop="status"
+                    label="状态"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column
+                    prop="date"
+                    label="创建时间"
+                    show-overflow-tooltip>
+            </el-table-column>
+            <el-table-column
+                    prop="user"
+                    label="创建用户"
+                    show-overflow-tooltip>
+            </el-table-column>
+
+            <el-table-column
+                    label="操作"
+            >
+                <template slot-scope="scope">
+                    <el-button
+                            size="mini"
+                            @click="handle_edit(scope.$index, scope.row)">编辑
+                    </el-button>
+                    <el-button
+                            size="mini"
+                            type="danger"
+                            @click="handleDelete(scope.$index, scope.row)">删除
+                    </el-button>
+                </template>
+            </el-table-column>
+        </el-table>
+
+    </div>
+    <div id="pagination" style="margin-top: 30px">
+        <!--分页-->
+        <el-pagination
+                @size-change="handleSizeChange"
+                @current-change="handleCurrentChange"
+                :current-page="filter_query.page"
+                :page-sizes="[20, 50, 100, 200]"
+                :page-size="filter_query.limit"
+                layout="total, sizes, prev, pager, next, jumper"
+                :total="total">
+        </el-pagination>
+    </div>
+    <div id="edit">
+        <!--增加、修改-->
+        <!--https://element.eleme.cn/#/zh-CN/component/dialog-->
+        <el-dialog :title="dialog_title" :visible.sync="dialogFormVisible" v-loading="dialog_loading">
+            <el-form :model="form">
+                <el-form-item label="用例标题" :label-width="formLabelWidth">
+                    <el-input v-model="form.title" autocomplete="on"></el-input>
+                </el-form-item>
+                <el-form-item label="接口" :label-width="formLabelWidth">
+                    <el-input v-model="form.interface" autocomplete="on"></el-input>
+                </el-form-item>
+
+                <el-form-item label="项目" :label-width="formLabelWidth">
+                    <el-select v-model="form.project" placeholder="项目">
+                        <el-option label="请选择" value=""></el-option>
+                        <el-option :key="project.id" v-for="project in projects" :label="project.name"
+                                   :value="project.id"></el-option>
+                    </el-select>
+                </el-form-item>
+
+
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+                <el-button @click="dialogFormVisible = false">取 消</el-button>
+                <!--点击取消，关闭模态框-->
+                <el-button type="primary" @click="dialog_title ==='添加'?create_data():edit_data()">确 定</el-button>
+            </div>
+        </el-dialog>
+
+    </div>
+
+
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="https://cdn.bootcss.com/axios/0.19.0/axios.min.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/utils.js"></script>
+
+<script>
+
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                table_loading:false,//loading动画
+                dialog_loading:false,//loading动画
+                dialog_title: '添加',
+                dialogFormVisible: false,//控制模态框是否显示
+                formLabelWidth: '120px',//模态框里input的长度
+                form: {
+                    title: '',
+                    interface: '',
+                    project: ''
+                },
+                filter_query: {
+                    search: undefined,
+                    project: undefined,
+                    limit : 20,
+                    page : 1
+                },
+                total: 100,
+                tableData: [],
+                multipleSelection: [],
+                projects: [],
+
+            }
+        },
+        methods: {
+            handle_filter() {
+                this.filter_query.page = 1 //
+                this.get_page_data()
+            },
+            handle_edit(row){
+                this.form = Object.assign({},row) //深拷贝
+                this.dialog_title = "编辑"
+                this.dialogFormVisible = true //打开模态框
+
+            },
+            handle_create(){
+                this.reset_form()
+                this.dialog_title = "添加"
+                this.dialogFormVisible = true //打开模态框
+
+            },
+            handle_delete(row){
+                this.$confirm('确认删除吗?').then(
+                    () => {
+                        axios.delete(host + '/api/project?id='+row.id,).then(() => {
+                            this.$notify({
+                                title: '成功',
+                                message: '删除成功',
+                                type: 'success',
+                                duration: 2000
+                            })
+                            const index = this.list.indexOf(row)
+                            this.list.splice(index, 1)
+                        })
+                    }
+                ).catch(
+                    () => {
+                        this.$notify({
+                            title: '取消删除',
+                            message: '取消删除',
+                            type: 'info',
+                            duration: 2000
+                        })
+                    }
+                )
+
+            },
+
+            reset_form(){
+                //form数据置为空
+                this.form = {
+                        title: '',
+                        interface: '',
+                        project: ''
+                    }
+            },
+            handleSizeChange(val) {
+                //修改页面展示条数
+                this.filter_query.limit = val;
+                this.filter_query.page = 1;
+                this.get_page_data();
+            },
+            handleCurrentChange(val) {
+                //更换当前页
+                this.filter_query.page = val;
+                this.get_page_data();
+            },
+            handleSelectionChange(val) {
+                //获取选中的
+                this.multipleSelection = val;
+            },
+            get_page_data() {
+                //获取数据
+                var case_collection_id = getQueryVariable('case_collection_id'); //如果是从用例集合页面进来的，就可以获取到case_collection_id
+                var report_batch = getQueryVariable('report_batch'); //如果是从用例集合页面进来的，就可以获取到case_collection_id
+                console.log(case_collection_id);
+                console.log(report_batch);
+                this.table_loading = true;//
+                let params = {'limit': this.page_size, 'page': this.currentPage}
+                axios.get(host + '/api/project', {params: params}).then(response => {
+                    this.table_loading = false;
+
+                    if (response.data.code == 0){
+
+                        this.tableData = response.data.data;
+                        this.total = response.data.count;
+                    }
+                    else {
+                        this.$message.error(response.data.msg)
+                    }
+
+                }).catch(
+                    error=>{
+                    this.table_loading = false;
+                    this.$message.error('接口请求出错，请检查接口')
+                    }
+                )
+
+            },
+            get_project_data() {
+                //获取数据
+                let params = {'limit': 50}
+                axios.get(host + '/api/project', {params: params}).then(response => {
+                    this.projects = response.data.data;
+                }).catch(error=>{
+                    this.$message.error('接口请求出错，请检查接口')
+                })
+
+            },
+            create_data() {
+                axios.post(  host + '/api/project',
+                    {"data":this.form}
+                ).then(response=>{
+                    if (response.data.code == 0 ){
+                        this.dialogFormVisible = false //关闭模态框
+                    }
+                    else{
+                        this.$message.error(response.data.msg)
+                    }
+                }).catch(error=>{
+                    this.$message.error('接口请求出错，请检查接口')
+                })
+            },
+
+            edit_data() {
+                this.dialog_loading = true
+                axios.put(  host + '/api/project?id='+this.form.id,
+                    {"data":this.form}
+                ).then(response=>{
+                    this.dialog_loading = false;
+                    if (response.data.code == 0 ){
+                        this.dialogFormVisible = false //关闭模态框
+                    }
+                    else{
+                        this.$message.error(response.data.msg)
+                    }
+                }).catch(error=>{
+                    this.$message.error('接口请求出错，请检查接口')
+                })
+            },
+        },
+        created: function () {
+            //页面刚加载的时候就发请求
+            this.get_project_data();
+            this.get_page_data();
+
+        }
+    })
+</script>
+
+</html>
